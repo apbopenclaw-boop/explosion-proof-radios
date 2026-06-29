@@ -1,0 +1,994 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Explosion Proof Radios — Compare ATEX & IECEx Zone 1 Certified Two-Way Radios (2026)</title>
+<meta name="description" content="Compare every ATEX and IECEx certified explosion proof two-way radio for Zone 1 and Zone 2 hazardous areas — specs, certifications and independent ratings side by side." />
+<link rel="canonical" href="https://explosionproofradios.com/" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Explosion Proof Radios — ATEX & IECEx Zone 1 Certified Two-Way Radios" />
+<meta property="og:description" content="Compare every ATEX and IECEx certified explosion proof two-way radio for Zone 1 and Zone 2 hazardous areas — specs, certifications and independent ratings side by side." />
+<meta property="og:url" content="https://explosionproofradios.com/" />
+<meta property="og:site_name" content="explosionproofradios.com" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Explosion Proof Radios — ATEX & IECEx Zone 1 Certified" />
+<meta name="twitter:description" content="Compare ATEX and IECEx certified explosion proof two-way radios for Zone 1 and Zone 2 hazardous areas." />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#ffffff;
+    --bg-alt:#f5f3f0;
+    --surface:#f0ece7;
+    --border:#e0dcd6;
+    --border-strong:#d1ccc3;
+    --ink:#1a1a1a;
+    --graphite:#4a4a4a;
+    --ash:#888880;
+    --active:#22c55e;
+    --mint:#dcfce7;
+    --amber:#f59e0b;
+    --void:#0c0c0c;
+    --radius-sm:10px;
+    --radius:16px;
+    --radius-lg:24px;
+    --radius-pill:100px;
+    --space-section:clamp(5rem, 3rem + 5.5vw, 9rem);
+  }
+  html,body{background:var(--bg);color:var(--ink);}
+  body{font-family:'Inter',system-ui,sans-serif;-webkit-font-smoothing:antialiased;font-feature-settings:"ss01","cv11";}
+  .serif{font-family:'Instrument Serif','Times New Roman',serif;font-weight:400;letter-spacing:-0.01em;line-height:1.1;}
+  .mono{font-family:'JetBrains Mono',ui-monospace,monospace;font-variant-ligatures:none;}
+  .glass{background:rgba(255,255,255,0.72);backdrop-filter:blur(20px) saturate(1.4);-webkit-backdrop-filter:blur(20px) saturate(1.4);border-bottom:1px solid rgba(224,220,214,0.6);}
+  .paper-bg{background:radial-gradient(1200px 600px at 80% -10%,rgba(245,158,11,0.06),transparent 60%),radial-gradient(1000px 500px at 10% 30%,rgba(34,197,94,0.05),transparent 55%),linear-gradient(180deg,#faf8f4 0%,#ffffff 60%);}
+  .grain{position:absolute;inset:0;pointer-events:none;opacity:.35;background-image:radial-gradient(rgba(0,0,0,0.05) 1px,transparent 1px);background-size:3px 3px;mix-blend-mode:multiply;}
+  .card{background:var(--bg);border:1.5px solid var(--border);border-radius:var(--radius);transition:border-color .2s ease,transform .2s ease;}
+  .card:hover{border-color:var(--border-strong);}
+  .btn{display:inline-flex;align-items:center;gap:.55rem;border-radius:var(--radius-pill);padding:.75rem 1.6rem;font-weight:500;font-size:.9rem;transition:all .2s ease;white-space:nowrap;}
+  .btn-primary{background:var(--ink);color:#fff;}
+  .btn-primary:hover{background:#000;}
+  .btn-secondary{background:var(--bg);color:var(--ink);border:1.5px solid var(--border);}
+  .btn-secondary:hover{border-color:var(--border-strong);}
+  .btn-ghost{color:var(--graphite);}
+  .btn-ghost:hover{color:var(--ink);}
+  .badge{display:inline-flex;align-items:center;gap:.4rem;border-radius:var(--radius-pill);padding:.3em 0.9em;font-size:.76rem;font-weight:500;letter-spacing:.01em;white-space:nowrap;}
+  .badge-green{background:var(--mint);color:#166534;}
+  .badge-warn{background:#fef3c7;color:#92400e;}
+  .badge-neutral{background:var(--bg-alt);color:var(--graphite);border:1px solid var(--border);}
+  .badge-stone{background:var(--surface);color:var(--graphite);}
+  .badge-dark{background:var(--void);color:#fff;}
+  .chip{display:inline-flex;align-items:center;gap:.35rem;padding:3px 8px;border-radius:6px;background:var(--bg-alt);border:1px solid var(--border);font-family:'JetBrains Mono',monospace;font-size:11.5px;color:var(--graphite);}
+  .chip-dark{background:var(--void);color:#e8ebe4;border-color:#222;}
+  .pill{font-size:.82rem;padding:.45rem 1rem;border-radius:var(--radius-pill);border:1.5px solid var(--border);color:var(--graphite);background:var(--bg);transition:all .15s;cursor:pointer;font-weight:500;}
+  .pill:hover{border-color:var(--ink);color:var(--ink);}
+  .pill[aria-pressed="true"]{background:var(--ink);color:#fff;border-color:var(--ink);}
+  .hb{position:relative;display:inline-flex;width:10px;height:10px;}
+  .hb::after{content:"";position:absolute;inset:0;border-radius:50%;background:var(--active);box-shadow:0 0 0 0 rgba(34,197,94,.6);animation:hb 2s ease-in-out infinite;}
+  .hb::before{content:"";position:absolute;inset:0;border-radius:50%;background:var(--active);}
+  @keyframes hb{0%{box-shadow:0 0 0 0 rgba(34,197,94,.45);transform:scale(1);}70%{box-shadow:0 0 0 10px rgba(34,197,94,0);transform:scale(1.18);}100%{box-shadow:0 0 0 0 rgba(34,197,94,0);transform:scale(1);}}
+  .score-track{display:inline-flex;gap:3px;}
+  .score-seg{width:14px;height:5px;border-radius:2px;background:var(--border);}
+  .score-seg.on{background:var(--ink);}
+  .ff-bar{height:4px;border-radius:2px;background:var(--border);overflow:hidden;}
+  .ff-bar>span{display:block;height:100%;background:linear-gradient(90deg,var(--active),var(--amber));}
+  .spec{display:grid;grid-template-columns:1fr auto;gap:12px;padding:11px 0;align-items:center;border-top:1px solid var(--border);}
+  .spec:first-child{border-top:0;}
+  .spec-label{font-size:.78rem;color:var(--ash);letter-spacing:.01em;}
+  .spec-val{font-family:'JetBrains Mono',monospace;font-size:.82rem;color:var(--ink);text-align:right;white-space:nowrap;}
+  .device-shot{aspect-ratio:4/3;background:repeating-linear-gradient(135deg,rgba(0,0,0,0.035) 0 1px,transparent 1px 14px),linear-gradient(180deg,var(--bg-alt),var(--surface));border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;border:1px solid var(--border);}
+  .device-shot.featured-shot{aspect-ratio:16/9;}
+  .device-shot .dev-silhouette{width:30%;height:72%;border:1.5px solid rgba(26,26,26,0.28);border-radius:8px;background:linear-gradient(180deg,rgba(255,255,255,0.5),rgba(255,255,255,0.1));position:relative;box-shadow:0 16px 40px -18px rgba(0,0,0,0.18);}
+  .device-shot .dev-silhouette.rugged{border-radius:6px;width:26%;border-width:2.5px;}
+  .device-shot .dev-silhouette::before{content:"";position:absolute;left:15%;right:15%;top:12%;bottom:20%;border:1px dashed rgba(26,26,26,0.18);border-radius:4px;}
+  .device-shot .dev-silhouette::after{content:"";position:absolute;left:35%;right:35%;top:5%;height:3px;background:rgba(26,26,26,0.25);border-radius:2px;}
+  .device-shot .ph-label{position:absolute;left:12px;bottom:10px;font-family:'JetBrains Mono',monospace;font-size:10.5px;color:var(--ash);background:rgba(255,255,255,0.75);padding:2px 7px;border-radius:4px;backdrop-filter:blur(4px);}
+  .device-shot img{width:100%;height:100%;object-fit:cover;display:block;}
+  .ribbon{position:absolute;top:-10px;left:20px;background:var(--ink);color:#fff;font-family:'JetBrains Mono',monospace;font-size:11px;padding:4px 12px;border-radius:var(--radius-pill);display:inline-flex;align-items:center;gap:6px;box-shadow:0 8px 24px -10px rgba(0,0,0,.2);}
+  .ribbon .dot{width:6px;height:6px;border-radius:50%;background:var(--active);}
+  .cb{appearance:none;width:18px;height:18px;border:1.5px solid var(--border-strong);background:var(--bg);display:inline-grid;place-items:center;cursor:pointer;border-radius:5px;}
+  .cb:checked{background:var(--ink);border-color:var(--ink);}
+  .cb:checked::after{content:"";width:4px;height:8px;border:solid #fff;border-width:0 2px 2px 0;transform:rotate(45deg) translate(-1px,-1px);}
+  .cmp-table th,.cmp-table td{padding:13px 16px;vertical-align:top;border-top:1px solid var(--border);text-align:left;}
+  .cmp-table th{background:var(--bg-alt);color:var(--ash);font-size:.76rem;font-weight:500;letter-spacing:.03em;text-transform:uppercase;}
+  .cmp-table tr:first-child td{border-top:0;}
+  .hr-rule{height:1px;background:var(--border);}
+  .anchor{scroll-margin-top:90px;}
+  .card-expand{display:none;}
+  .card.open .card-expand{display:block;}
+  .chev{transition:transform .2s;}
+  .card.open .chev{transform:rotate(180deg);}
+  .compare-bar{position:fixed;left:0;right:0;bottom:0;transform:translateY(130%);transition:transform .3s cubic-bezier(.3,.7,.3,1);z-index:40;}
+  .compare-bar.show{transform:translateY(0);}
+  .reveal{opacity:0;transform:translateY(12px);animation:reveal .6s ease-out forwards;}
+  @keyframes reveal{to{opacity:1;transform:none;}}
+  .r1{animation-delay:.05s}.r2{animation-delay:.19s}.r3{animation-delay:.33s}.r4{animation-delay:.47s}
+  .h-hero{font-size:clamp(2.8rem,7vw,5.4rem);}
+  .h-section{font-size:clamp(2rem,4vw,3rem);}
+  .h-card{font-size:clamp(1.1rem,1.4vw,1.4rem);}
+  a.link{color:var(--ink);border-bottom:1px solid var(--border-strong);}
+  a.link:hover{border-color:var(--ink);}
+  ::-webkit-scrollbar{width:10px;height:10px;}
+  ::-webkit-scrollbar-track{background:transparent;}
+  ::-webkit-scrollbar-thumb{background:var(--border-strong);border-radius:5px;}
+  .dash-dot::before{content:"·";margin:0 .5em;color:var(--ash);}
+  .pullquote{font-family:'Instrument Serif',serif;font-size:clamp(1.6rem,2.6vw,2.2rem);line-height:1.25;letter-spacing:-.01em;color:var(--ink);}
+  .col-rule{border-left:1px solid var(--border);}
+  @media(max-width:1023px){.col-rule{border-left:0;border-top:1px solid var(--border);padding-top:2rem;margin-top:2rem;}}
+  .mobile-drawer{background:var(--bg);border-left:1px solid var(--border);}
+  .mobile-nav-link{display:block;padding:10px 12px;border-radius:10px;font-size:15px;color:var(--ink);text-decoration:none;transition:background .12s;}
+  .mobile-nav-link:hover{background:var(--surface);}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "explosionproofradios.com",
+  "url": "https://explosionproofradios.com/",
+  "description": "Engineering reference for ATEX and IECEx certified explosion proof two-way radios and communication equipment for hazardous areas."
+}
+</script>
+<script type="application/ld+json">[
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Motorola Solutions DP4401Ex",
+    "description": "Zone 1 ATEX and IECEx certified DMR portable two-way radio. Ex ib IIC T4 Gb with IP68 rating, GPS, Bluetooth, and Man Down alert.",
+    "brand": {"@type": "Brand", "name": "Motorola Solutions"},
+    "category": "Explosion Proof Two-Way Radios"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Motorola Solutions DP4801Ex",
+    "description": "Zone 1 ATEX and IECEx certified DMR portable two-way radio with full keypad and display. Ex ib IIC T4 Gb, IP68, GPS, Bluetooth.",
+    "brand": {"@type": "Brand", "name": "Motorola Solutions"},
+    "category": "Explosion Proof Two-Way Radios"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Motorola Solutions MTP8550Ex",
+    "description": "Zone 1 ATEX and IECEx certified TETRA portable radio. Ex ib IIC T4 Gb with IP65, GPS, Man Down, and mission-critical TETRA voice.",
+    "brand": {"@type": "Brand", "name": "Motorola Solutions"},
+    "category": "Explosion Proof Two-Way Radios"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Kenwood NX-230EXE",
+    "description": "VHF NEXEDGE ATEX/IECEx digital/analogue portable radio with GPS. Zone 1 certified Ex ib IIC T4 Gb. MIL-STD-810 rugged.",
+    "brand": {"@type": "Brand", "name": "Kenwood (JVCKENWOOD)"},
+    "category": "Explosion Proof Two-Way Radios"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Kenwood NX-330EXE",
+    "description": "UHF NEXEDGE ATEX/IECEx digital/analogue portable radio with GPS. Zone 1 certified Ex ib IIC T4 Gb. MIL-STD-810 rugged.",
+    "brand": {"@type": "Brand", "name": "Kenwood (JVCKENWOOD)"},
+    "category": "Explosion Proof Two-Way Radios"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Sepura STP8X000",
+    "description": "Zone 1 ATEX and IECEx certified TETRA hand-portable radio. Ex ib IIC T4 Gb with IP67, GPS, Man Down, and full keypad.",
+    "brand": {"@type": "Brand", "name": "Sepura"},
+    "category": "Explosion Proof Two-Way Radios"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "i.safe MOBILE IS440.1",
+    "description": "Zone 1 ATEX and IECEx certified 4G/LTE Push-to-Talk over Cellular (PoC) radio. Ex ib IIC T4 Gb with IP68, GPS, Wi-Fi, and Bluetooth.",
+    "brand": {"@type": "Brand", "name": "i.safe MOBILE"},
+    "category": "Explosion Proof Two-Way Radios"
+  }
+]</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is an explosion proof radio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An explosion proof radio is a two-way communication device certified under ATEX or IECEx standards for use in explosive atmospheres. The device limits electrical and thermal energy so it cannot ignite flammable gases, vapours or dust. Most ATEX radios use intrinsic safety (Ex ib) protection, meaning the circuits are designed so that no fault condition can produce enough energy to cause ignition."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between DMR, TETRA, and PoC radios?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "DMR (Digital Mobile Radio) is an open standard for digital two-way radio, widely used in commercial and industrial settings. TETRA (Terrestrial Trunked Radio) is a mission-critical standard used by emergency services and large industrial operations, offering group calls, encryption, and high reliability. PoC (Push-to-Talk over Cellular) radios use 4G/5G mobile networks instead of dedicated radio infrastructure, offering wider coverage but depending on cellular availability."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use a normal radio in a hazardous area?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Standard two-way radios are not certified for explosive atmospheres and can produce sparks or heat sufficient to ignite flammable gases or dust. Only ATEX or IECEx certified radios may be used in classified hazardous areas. Using uncertified equipment in a Zone 1 or Zone 2 area is a notifiable offence under DSEAR (UK) and the ATEX Worker Protection Directive 1999/92/EC (EU)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What certifications are required for a radio in Zone 1?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A radio used in Zone 1 requires Equipment Group II Category 2G certification. In the EU/EEA, ATEX certification under Directive 2014/34/EU is mandatory. For international deployments, IECEx certification is accepted in over 30 countries. The protection concept is typically Ex ib (intrinsic safety). Dual-certified devices (both ATEX and IECEx) provide maximum deployment flexibility."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which explosion proof radio is best for oil and gas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For oil and gas operations, DMR radios like the Motorola DP4401Ex or DP4801Ex are widely deployed due to their robust DMR Tier II/III capabilities, GPS tracking, and Man Down safety features. For sites with existing TETRA infrastructure, the Motorola MTP8550Ex or Sepura STP8X000 provide mission-critical voice with end-to-end encryption. All are Zone 1 IIC T4 certified, covering hydrogen-class atmospheres found in refineries."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body class="min-h-screen">
+
+<!-- =========== NAV =========== -->
+<header class="glass sticky top-0 z-30">
+  <div class="max-w-[1140px] mx-auto px-6 h-16 flex items-center gap-6">
+    <a href="/" class="flex items-center gap-2.5 shrink-0">
+      <svg width="26" height="26" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <path d="M16 2.5l11.5 6.5v13L16 28.5 4.5 22V9L16 2.5Z" stroke="#1a1a1a" stroke-width="1.6" stroke-linejoin="round"/>
+        <rect x="10" y="8" width="12" height="16" rx="2" stroke="#1a1a1a" stroke-width="1.6"/>
+        <circle cx="16" cy="12" r="1.4" fill="#22c55e"/>
+        <line x1="16" y1="4" x2="16" y2="8" stroke="#1a1a1a" stroke-width="1.6" stroke-linecap="round"/>
+      </svg>
+      <span class="flex flex-col leading-none">
+        <span class="text-[15px] font-semibold tracking-[-0.015em]">explosionproofradios<span style="color:var(--ash)" class="font-normal">.com</span></span>
+        <span class="mono text-[9.5px] uppercase tracking-[0.16em] mt-1" style="color:var(--ash)">ATEX &middot; IECEx reference</span>
+      </span>
+    </a>
+    <nav class="hidden md:flex items-center gap-6 text-[14px]" style="color:var(--graphite)">
+      <a href="/#solutions" class="hover:text-[color:var(--ink)] transition-colors">Radios</a>
+      <a href="/#certification" class="hover:text-[color:var(--ink)] transition-colors">Certification</a>
+      <a href="/#technology" class="hover:text-[color:var(--ink)] transition-colors">DMR vs TETRA vs PoC</a>
+      <a href="/#contact" class="hover:text-[color:var(--ink)] transition-colors">Contact</a>
+    </nav>
+    <div class="ml-auto flex items-center gap-3">
+      <span class="hidden lg:inline mono text-[11.5px]" style="color:var(--ash)">Rev 2026.06 · IEC 60079</span>
+      <button id="compareToggle" class="btn btn-secondary !py-2 !px-4 !text-[13px] hidden lg:inline-flex">
+        Compare <span class="badge badge-neutral !py-0 !px-2 ml-1" id="compareCount">0</span>
+      </button>
+      <button onclick="document.getElementById('mobileMenu').classList.remove('hidden')" class="md:hidden p-2 -mr-2" aria-label="Open menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div id="mobileMenu" class="hidden fixed inset-0 z-40">
+  <div class="absolute inset-0 bg-black/30 backdrop-blur-sm" onclick="document.getElementById('mobileMenu').classList.add('hidden')"></div>
+  <div class="mobile-drawer absolute right-0 top-0 bottom-0 w-[280px] shadow-2xl overflow-y-auto">
+    <div class="p-6 pt-5">
+      <div class="flex items-center justify-between mb-8">
+        <span class="font-semibold text-sm">Menu</span>
+        <button onclick="document.getElementById('mobileMenu').classList.add('hidden')" class="p-1.5 rounded-lg" aria-label="Close">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <nav class="flex flex-col gap-1">
+        <a href="/" class="mobile-nav-link">Home</a>
+        <a href="/#solutions" class="mobile-nav-link">Radios</a>
+        <a href="/#certification" class="mobile-nav-link">Certification</a>
+        <a href="/#technology" class="mobile-nav-link">DMR vs TETRA vs PoC</a>
+        <a href="/#contact" class="mobile-nav-link">Contact</a>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<main id="top">
+
+<!-- =========== HERO =========== -->
+<section class="paper-bg relative overflow-hidden">
+  <div class="grain"></div>
+  <div class="max-w-[1140px] mx-auto px-6 pt-20 pb-12 relative">
+
+    <div class="flex items-center gap-3 mb-8 reveal r1">
+      <span class="hb"></span>
+      <span class="mono text-[12px] tracking-[0.04em] text-[color:var(--graphite)]">Engineering reference · updated Jun 2026</span>
+    </div>
+
+    <h1 class="serif h-hero reveal r1">
+      ATEX &amp; IECEx certified<br/>
+      two-way radios <em class="text-[color:var(--graphite)] italic">for Zone&nbsp;1 &amp; Zone&nbsp;2</em><br/>
+      hazardous areas.
+    </h1>
+
+    <p class="mt-8 max-w-[62ch] text-[18px] leading-[1.55] text-[color:var(--graphite)] reveal r2">
+      A comparison of certified explosion proof DMR, TETRA, and Push-to-Talk over Cellular radios — verified against manufacturer certificates of conformity. No vendor fluff. Just specifications, written for HSE engineers and procurement.
+    </p>
+
+    <div class="mt-10 flex flex-wrap items-center gap-3 reveal r2">
+      <a href="#solutions" class="btn btn-primary">Browse radios →</a>
+      <a href="#technology" class="btn btn-secondary">DMR vs TETRA vs PoC</a>
+      <span class="ml-auto hidden md:inline mono text-[12px] text-[color:var(--ash)]">7 radios indexed · 4 vendors</span>
+    </div>
+
+    <!-- stat row -->
+    <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-0 border-y border-[color:var(--border)] reveal r3">
+      <div class="py-6 pr-6 border-r border-[color:var(--border)]">
+        <div class="serif text-[42px] leading-none">07</div>
+        <div class="text-[13px] text-[color:var(--ash)] mt-2">Radios indexed</div>
+      </div>
+      <div class="py-6 px-6 md:border-r md:border-[color:var(--border)]">
+        <div class="serif text-[42px] leading-none">IIC</div>
+        <div class="text-[13px] text-[color:var(--ash)] mt-2">Max gas group covered</div>
+      </div>
+      <div class="py-6 pr-6 md:px-6 border-r border-[color:var(--border)] border-t md:border-t-0">
+        <div class="serif text-[42px] leading-none">T4</div>
+        <div class="text-[13px] text-[color:var(--ash)] mt-2">Temp class</div>
+      </div>
+      <div class="py-6 px-6 border-t md:border-t-0">
+        <div class="serif text-[42px] leading-none flex items-center gap-3">4<span class="text-[color:var(--ash)] text-[26px]">vendors</span></div>
+        <div class="text-[13px] text-[color:var(--ash)] mt-2">Established manufacturers</div>
+      </div>
+    </div>
+
+    <!-- Filter bar -->
+    <div class="mt-10 reveal r4">
+      <div class="flex items-center gap-3 mb-3">
+        <span class="text-[12px] text-[color:var(--ash)] tracking-[0.04em] uppercase">Filter</span>
+        <span class="h-px flex-1 bg-[color:var(--border)]"></span>
+        <button id="clearFilters" class="text-[12px] text-[color:var(--graphite)] hover:text-[color:var(--ink)] underline underline-offset-4 decoration-[color:var(--border-strong)]">Clear</button>
+      </div>
+      <div class="flex flex-wrap items-center gap-x-5 gap-y-3" id="filterBar">
+        <span class="inline-flex items-center gap-2 flex-wrap">
+          <span class="mono text-[11px] text-[color:var(--ash)]">zone</span>
+          <button class="pill" data-filter="zone" data-val="zone1">Zone 1</button>
+          <button class="pill" data-filter="zone" data-val="zone2">Zone 2</button>
+        </span>
+        <span class="inline-flex items-center gap-2 flex-wrap">
+          <span class="mono text-[11px] text-[color:var(--ash)]">cert</span>
+          <button class="pill" data-filter="cert" data-val="iecex">IECEx</button>
+          <button class="pill" data-filter="cert" data-val="atex">ATEX</button>
+        </span>
+        <span class="inline-flex items-center gap-2 flex-wrap">
+          <span class="mono text-[11px] text-[color:var(--ash)]">technology</span>
+          <button class="pill" data-filter="tech" data-val="DMR">DMR</button>
+          <button class="pill" data-filter="tech" data-val="TETRA">TETRA</button>
+          <button class="pill" data-filter="tech" data-val="NXDN">NXDN</button>
+          <button class="pill" data-filter="tech" data-val="PoC">PoC</button>
+        </span>
+        <span class="inline-flex items-center gap-2 flex-wrap">
+          <span class="mono text-[11px] text-[color:var(--ash)]">band</span>
+          <button class="pill" data-filter="band" data-val="VHF">VHF</button>
+          <button class="pill" data-filter="band" data-val="UHF">UHF</button>
+        </span>
+      </div>
+      <div class="mt-4 text-[13px] text-[color:var(--ash)]">
+        <span id="resultCount">7</span> / 7 radios shown · click card to expand · tick ☐ to compare
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========== SOLUTIONS =========== -->
+<section id="solutions" class="anchor">
+  <div class="max-w-[1140px] mx-auto px-6 pt-24 pb-24">
+    <div class="flex items-end justify-between gap-8 mb-10 flex-wrap">
+      <div>
+        <div class="mono text-[12px] text-[color:var(--ash)] mb-3">§ 01 — Certified radios</div>
+        <h2 class="serif h-section">Every radio, <em class="italic text-[color:var(--graphite)]">one comparable layout.</em></h2>
+      </div>
+      <div class="max-w-[38ch] text-[15px] text-[color:var(--graphite)]">
+        Sorted by overall score. Each card carries the full Ex notation, zone coverage, and a deployment note — click to expand.
+      </div>
+    </div>
+    <div id="cardGrid" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+    </div>
+  </div>
+</section>
+
+<!-- =========== CERTIFICATION EXPLAINER =========== -->
+<section id="certification" class="anchor">
+  <div class="max-w-[1140px] mx-auto px-6 pt-24 pb-20">
+    <div class="mb-12">
+      <div class="mono text-[12px] text-[color:var(--ash)] mb-3">§ 02 — Why certification type matters</div>
+      <h2 class="serif h-section max-w-[18ch]">Three decisions that <em class="italic text-[color:var(--graphite)]">fail procurement review.</em></h2>
+      <p class="mt-6 max-w-[65ch] text-[17px] leading-[1.55] text-[color:var(--graphite)]">
+        Selecting the wrong zone rating or gas group for your facility is not a compliance issue — it is an ignition risk. The distinctions below drive most HSE rejections.
+      </p>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+      <article>
+        <div class="flex items-center gap-3 mb-5">
+          <span class="badge badge-warn">01 · Zone</span>
+          <span class="text-[13px] text-[color:var(--ash)]">Frequency of explosive mixture</span>
+        </div>
+        <h3 class="serif text-[28px] leading-[1.1] mb-4">Zone 1 vs Zone 2.</h3>
+        <dl class="space-y-4 text-[15px] leading-[1.55]">
+          <div><dt class="font-semibold">Zone 1</dt><dd class="text-[color:var(--graphite)] mt-1">An atmosphere in which an explosive mixture is <em>likely to occur in normal operation, occasionally.</em> Requires category 2G equipment — typically Ex&nbsp;ib.</dd></div>
+          <div><dt class="font-semibold">Zone 2</dt><dd class="text-[color:var(--graphite)] mt-1">Explosive mixture <em>not likely to occur, and only for short periods</em> if it does. Category 3G equipment permitted (Ex&nbsp;nA / Ex&nbsp;ec).</dd></div>
+        </dl>
+        <div class="mt-5 p-4 card-surface rounded-[var(--radius-sm)] text-[13.5px] leading-[1.55] text-[color:var(--graphite)]">
+          <div class="mono text-[11px] text-[color:var(--ash)] mb-1">Radio-specific consideration</div>
+          Two-way radios transmit RF energy, which adds to the ignition risk calculation. All radios on this page are Zone 1 certified — safe for both Zone 1 and Zone 2 deployment.
+        </div>
+      </article>
+      <article class="lg:col-rule lg:pl-10">
+        <div class="flex items-center gap-3 mb-5">
+          <span class="badge badge-neutral">02 · Scheme</span>
+          <span class="text-[13px] text-[color:var(--ash)]">Where it's legally required</span>
+        </div>
+        <h3 class="serif text-[28px] leading-[1.1] mb-4">ATEX vs IECEx.</h3>
+        <dl class="space-y-4 text-[15px] leading-[1.55]">
+          <div><dt class="font-semibold">ATEX · 2014/34/EU</dt><dd class="text-[color:var(--graphite)] mt-1">Mandatory CE-marking directive for equipment placed on the EU/EEA market. Requires a Notified Body-issued EU-Type Examination Certificate.</dd></div>
+          <div><dt class="font-semibold">IECEx</dt><dd class="text-[color:var(--graphite)] mt-1">Voluntary international scheme accepted in 30+ countries including UK, Australia, the Gulf, and much of APAC. Issued against the same IEC 60079 series.</dd></div>
+        </dl>
+        <div class="mt-5 p-4 card-surface rounded-[var(--radius-sm)] text-[13.5px] leading-[1.55] text-[color:var(--graphite)]">
+          <div class="mono text-[11px] text-[color:var(--ash)] mb-1">Mutual recognition</div>
+          An IECEx CoC is a valid technical basis for ATEX certification, but the IECEx mark alone is not sufficient for EU deployment. Dual-certified equipment is the safe procurement default.
+        </div>
+      </article>
+      <article class="lg:col-rule lg:pl-10">
+        <div class="flex items-center gap-3 mb-5">
+          <span class="badge badge-stone">03 · Gas group</span>
+          <span class="text-[13px] text-[color:var(--ash)]">Apparatus group II</span>
+        </div>
+        <h3 class="serif text-[28px] leading-[1.1] mb-4">IIA, IIB, IIC.</h3>
+        <dl class="space-y-3 text-[15px] leading-[1.55]">
+          <div class="flex gap-3"><dt class="mono text-[13px] w-10 text-[color:var(--ink)] pt-0.5">IIA</dt><dd class="text-[color:var(--graphite)]">Propane-like atmospheres. LPG, fuel storage.</dd></div>
+          <div class="flex gap-3"><dt class="mono text-[13px] w-10 text-[color:var(--ink)] pt-0.5">IIB</dt><dd class="text-[color:var(--graphite)]">Ethylene-like atmospheres. Most petrochemical downstream.</dd></div>
+          <div class="flex gap-3"><dt class="mono text-[13px] w-10 text-[color:var(--ink)] pt-0.5">IIC</dt><dd class="text-[color:var(--graphite)]">Hydrogen &amp; acetylene. MIE &asymp; 0.017&nbsp;mJ — the hardest Group II target. IIC implies IIA and IIB by inclusion.</dd></div>
+        </dl>
+        <div class="mt-5 p-4 card-surface rounded-[var(--radius-sm)] text-[13.5px] leading-[1.55] text-[color:var(--graphite)]">
+          <div class="mono text-[11px] text-[color:var(--ash)] mb-1">All radios on this page</div>
+          Every radio listed is certified IIC T4 — covering the full range of Group II gases including hydrogen. No need to worry about gas group mismatch.
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- =========== TECHNOLOGY COMPARISON =========== -->
+<section id="technology" class="anchor bg-[color:var(--bg-alt)] border-y border-[color:var(--border)]">
+  <div class="max-w-[1140px] mx-auto px-6 py-24">
+    <div class="mb-12 max-w-[52ch]">
+      <div class="mono text-[12px] text-[color:var(--ash)] mb-3">§ 03 — Radio technology</div>
+      <h2 class="serif h-section">DMR vs TETRA vs PoC, <em class="italic text-[color:var(--graphite)]">honestly.</em></h2>
+      <p class="mt-5 text-[16.5px] leading-[1.55] text-[color:var(--graphite)]">
+        Three radio technologies dominate hazardous area communications. The right choice depends on infrastructure, coverage requirements, and whether you need mission-critical voice.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <article class="card p-8 relative">
+        <div class="flex items-center justify-between mb-5">
+          <span class="badge badge-green"><span class="hb !w-[7px] !h-[7px]"></span>DMR</span>
+          <span class="chip">Digital Mobile Radio</span>
+        </div>
+        <h3 class="serif text-[26px] leading-[1.1] mb-2">The workhorse.</h3>
+        <p class="text-[15px] text-[color:var(--graphite)] leading-[1.55] mb-6">
+          Open ETSI standard (TS 102 361). Two time slots per 12.5 kHz channel doubles capacity vs analogue. Tier II (conventional) and Tier III (trunked) modes.
+        </p>
+        <ul class="space-y-2 text-[14px] text-[color:var(--graphite)]">
+          <li><strong class="text-[color:var(--ink)]">Infrastructure</strong> — Own repeaters. No cellular dependency.</li>
+          <li><strong class="text-[color:var(--ink)]">Coverage</strong> — Site-specific. Excellent in-building penetration on UHF.</li>
+          <li><strong class="text-[color:var(--ink)]">Latency</strong> — Near-zero PTT latency (&lt;300 ms).</li>
+          <li><strong class="text-[color:var(--ink)]">Best for</strong> — Refineries, chemical plants, manufacturing sites with existing repeater infrastructure.</li>
+        </ul>
+      </article>
+
+      <article class="card p-8 relative">
+        <div class="flex items-center justify-between mb-5">
+          <span class="badge badge-neutral">TETRA</span>
+          <span class="chip">Trunked Radio</span>
+        </div>
+        <h3 class="serif text-[26px] leading-[1.1] mb-2">Mission-critical.</h3>
+        <p class="text-[15px] text-[color:var(--graphite)] leading-[1.55] mb-6">
+          ETSI standard for public safety and critical infrastructure. End-to-end encryption, group calls, priority pre-emption, and direct mode operation.
+        </p>
+        <ul class="space-y-2 text-[14px] text-[color:var(--graphite)]">
+          <li><strong class="text-[color:var(--ink)]">Infrastructure</strong> — Dedicated TETRA base stations. Higher capex.</li>
+          <li><strong class="text-[color:var(--ink)]">Coverage</strong> — Wide-area via national TETRA networks or private systems.</li>
+          <li><strong class="text-[color:var(--ink)]">Reliability</strong> — Designed for 99.999% availability. Direct mode when network fails.</li>
+          <li><strong class="text-[color:var(--ink)]">Best for</strong> — Large-scale oil &amp; gas, emergency services, offshore platforms, national infrastructure.</li>
+        </ul>
+      </article>
+
+      <article class="card p-8 relative">
+        <div class="flex items-center justify-between mb-5">
+          <span class="badge badge-warn">PoC</span>
+          <span class="chip">Push-to-Talk over Cellular</span>
+        </div>
+        <h3 class="serif text-[26px] leading-[1.1] mb-2">Cellular-based.</h3>
+        <p class="text-[15px] text-[color:var(--graphite)] leading-[1.55] mb-6">
+          Uses 4G/5G mobile networks for PTT communication. No dedicated radio infrastructure required. Nationwide coverage where cellular exists.
+        </p>
+        <ul class="space-y-2 text-[14px] text-[color:var(--graphite)]">
+          <li><strong class="text-[color:var(--ink)]">Infrastructure</strong> — None. Uses public or private LTE/5G.</li>
+          <li><strong class="text-[color:var(--ink)]">Coverage</strong> — Wherever there is cellular signal.</li>
+          <li><strong class="text-[color:var(--ink)]">Latency</strong> — Higher PTT latency (1–3 sec) vs DMR/TETRA.</li>
+          <li><strong class="text-[color:var(--ink)]">Best for</strong> — Distributed sites, mobile workers, organisations without radio infrastructure budget.</li>
+        </ul>
+      </article>
+    </div>
+
+    <div class="card mt-8 overflow-x-auto">
+      <table class="cmp-table w-full text-[14px]">
+        <thead><tr>
+          <th class="w-[28%]">Criterion</th>
+          <th>DMR</th>
+          <th>TETRA</th>
+          <th>PoC (LTE/5G)</th>
+        </tr></thead>
+        <tbody>
+          <tr><td class="text-[color:var(--ash)]">Standard</td><td class="mono">ETSI TS 102 361</td><td class="mono">ETSI EN 300 392</td><td class="mono">3GPP MCPTT</td></tr>
+          <tr><td class="text-[color:var(--ash)]">Infrastructure</td><td class="mono">Own repeaters</td><td class="mono">TETRA base stations</td><td class="mono">Public/private LTE</td></tr>
+          <tr><td class="text-[color:var(--ash)]">PTT latency</td><td class="mono">&lt;300 ms</td><td class="mono">&lt;300 ms</td><td class="mono">1–3 sec</td></tr>
+          <tr><td class="text-[color:var(--ash)]">Encryption</td><td class="mono">ARC4 / AES-256</td><td class="mono">TEA1–TEA3 / E2EE</td><td class="mono">TLS / app-layer</td></tr>
+          <tr><td class="text-[color:var(--ash)]">Group calls</td><td class="mono">Yes (Tier II/III)</td><td class="mono">Yes (native)</td><td class="mono">Yes (app-based)</td></tr>
+          <tr><td class="text-[color:var(--ash)]">Typical capex</td><td class="mono">Medium</td><td class="mono">High</td><td class="mono">Low</td></tr>
+          <tr><td class="text-[color:var(--ash)]">Cellular dependency</td><td class="mono">None</td><td class="mono">None</td><td class="mono">Full</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- =========== METHODOLOGY =========== -->
+<section id="methodology" class="anchor">
+  <div class="max-w-[1140px] mx-auto px-6 py-24">
+    <div class="mb-10">
+      <div class="mono text-[12px] text-[color:var(--ash)] mb-3">§ 04 — Methodology</div>
+      <h2 class="serif h-section max-w-[22ch]">How this guide scores, and where the specs come from.</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-[15px] leading-[1.6] text-[color:var(--graphite)]">
+      <div>
+        <div class="mono text-[11px] text-[color:var(--ash)] uppercase tracking-wider mb-2">Score composition</div>
+        Overall score is a weighted composite: zone &amp; gas group coverage (25%), audio quality &amp; power output (20%), ruggedness / IP rating (15%), safety features (15%), technology standard maturity (15%), battery life (10%).
+      </div>
+      <div>
+        <div class="mono text-[11px] text-[color:var(--ash)] uppercase tracking-wider mb-2">Spec sourcing</div>
+        Specifications are drawn from manufacturer datasheets, IECEx Online Certificate of Conformity records, and ETSI standards. Where a value was unverifiable at publication, "—" is shown.
+      </div>
+      <div>
+        <div class="mono text-[11px] text-[color:var(--ash)] uppercase tracking-wider mb-2">Scope</div>
+        Only radios from established, non-Chinese manufacturers with verifiable ATEX/IECEx Zone 1 certificates are listed. PoC radios are included where they represent the category's closest functional alternative.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========== CONTACT =========== -->
+<section id="contact" class="bg-[color:var(--bg-alt)] py-20">
+  <div class="max-w-[640px] mx-auto px-6">
+    <div class="mono text-[11px] opacity-60 uppercase tracking-wider mb-3">§ Contact</div>
+    <h2 class="serif text-[32px] leading-tight mb-3">Get in touch</h2>
+    <p class="text-[14.5px] text-[color:var(--ash)] mb-8 leading-relaxed">
+      Questions about ATEX/IECEx radio selection, deployment planning, or the data on this site? Send us a message.
+    </p>
+    <form id="contactForm" action="https://formsubmit.co/apbopenclaw@gmail.com" method="POST" class="space-y-4">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div>
+          <label class="mono text-[11px] opacity-60 uppercase tracking-wider block mb-1.5">Name</label>
+          <input type="text" name="name" required class="w-full px-4 py-2.5 rounded-[var(--radius)] border border-[color:var(--border)] bg-[color:var(--bg)] text-[14px] focus:outline-none focus:border-[color:var(--ink)] transition" />
+        </div>
+        <div>
+          <label class="mono text-[11px] opacity-60 uppercase tracking-wider block mb-1.5">Email</label>
+          <input type="email" name="email" required class="w-full px-4 py-2.5 rounded-[var(--radius)] border border-[color:var(--border)] bg-[color:var(--bg)] text-[14px] focus:outline-none focus:border-[color:var(--ink)] transition" />
+        </div>
+      </div>
+      <div>
+        <label class="mono text-[11px] opacity-60 uppercase tracking-wider block mb-1.5">Company</label>
+        <input type="text" name="company" class="w-full px-4 py-2.5 rounded-[var(--radius)] border border-[color:var(--border)] bg-[color:var(--bg)] text-[14px] focus:outline-none focus:border-[color:var(--ink)] transition" />
+      </div>
+      <div>
+        <label class="mono text-[11px] opacity-60 uppercase tracking-wider block mb-1.5">Message</label>
+        <textarea name="message" rows="4" required class="w-full px-4 py-2.5 rounded-[var(--radius)] border border-[color:var(--border)] bg-[color:var(--bg)] text-[14px] focus:outline-none focus:border-[color:var(--ink)] transition resize-none"></textarea>
+      </div>
+      <input type="text" name="_gotcha" style="display:none" />
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="hidden" name="_subject" value="explosionproofradios.com — New contact" />
+      <button type="submit" class="px-6 py-2.5 bg-[color:var(--ink)] text-[color:var(--bg)] rounded-[var(--radius)] text-[14px] font-medium hover:opacity-90 transition">Send message</button>
+    </form>
+    <div id="formSuccess" class="hidden mt-4 p-4 bg-green-50 border border-green-200 rounded-[var(--radius)] text-[14px] text-green-800">
+      Message sent. We'll get back to you shortly.
+    </div>
+  </div>
+</section>
+
+<!-- =========== FOOTER =========== -->
+<footer class="bg-[color:var(--void)] text-[#e8ebe4]">
+  <div class="max-w-[1140px] mx-auto px-6 pt-20 pb-10">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+      <div class="lg:col-span-5">
+        <div class="flex items-center gap-2.5 mb-5">
+          <svg width="26" height="26" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <path d="M16 2.5l11.5 6.5v13L16 28.5 4.5 22V9L16 2.5Z" stroke="#ffffff" stroke-width="1.6" stroke-linejoin="round"/>
+            <rect x="10" y="8" width="12" height="16" rx="2" stroke="#ffffff" stroke-width="1.6"/>
+            <circle cx="16" cy="12" r="1.4" fill="#22c55e"/>
+            <line x1="16" y1="4" x2="16" y2="8" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+          <span class="font-semibold text-[15px]">explosionproofradios<span class="opacity-60 font-normal">.com</span></span>
+        </div>
+        <p class="serif text-[28px] leading-[1.15] max-w-[22ch]">
+          Engineering reference for hazardous area radio communications.
+        </p>
+        <p class="text-[13.5px] mt-4 opacity-70 leading-[1.6] max-w-[60ch]">
+          This site provides engineering comparison information only. It is not a substitute for a site-specific Ex inspection, DSEAR assessment, or the manufacturer's current Certificate of Conformity. Always verify certification documentation before deployment.
+        </p>
+      </div>
+      <div class="lg:col-span-3">
+        <div class="mono text-[11px] opacity-60 uppercase tracking-wider mb-4">References</div>
+        <ul class="space-y-2.5 text-[14px]">
+          <li><a class="opacity-90 hover:opacity-100" href="https://www.iecex.com" target="_blank" rel="noopener">IECEx Online Certificate System</a></li>
+          <li><a class="opacity-90 hover:opacity-100" href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32014L0034" target="_blank" rel="noopener">ATEX Directive 2014/34/EU</a></li>
+          <li><a class="opacity-90 hover:opacity-100" href="https://webstore.iec.ch/en/publication/622" target="_blank" rel="noopener">IEC 60079 series</a></li>
+          <li><a class="opacity-90 hover:opacity-100" href="https://www.legislation.gov.uk/uksi/2002/2776/contents/made" target="_blank" rel="noopener">DSEAR 2002 (UK)</a></li>
+        </ul>
+      </div>
+      <div class="lg:col-span-4">
+        <div class="mono text-[11px] opacity-60 uppercase tracking-wider mb-4">Also see</div>
+        <ul class="space-y-2.5 text-[14px]">
+          <li><a class="opacity-80 hover:opacity-100" href="https://intrinsicallysafephones.com">intrinsicallysafephones.com</a></li>
+          <li><a class="opacity-80 hover:opacity-100" href="https://xshielder.com" target="_blank" rel="noopener">Xshielder — ATEX smartphone solutions</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="hr-rule !bg-[#1f1f1f] my-10"></div>
+    <div class="flex flex-wrap items-center justify-between gap-4 text-[12px] opacity-60">
+      <div>&copy; 2026 · explosionproofradios.com · Rev 2026.06</div>
+      <div>Engineering reference — not a safety certificate.</div>
+    </div>
+  </div>
+</footer>
+
+</main>
+
+<!-- =========== COMPARE BAR =========== -->
+<div id="compareBar" class="compare-bar">
+  <div class="max-w-[1140px] mx-auto px-6 pb-6">
+    <div class="card !bg-[color:var(--bg-alt)] overflow-hidden shadow-[0_20px_60px_-20px_rgba(0,0,0,0.18)]">
+      <div class="flex items-center justify-between px-5 py-3 border-b border-[color:var(--border)]">
+        <div class="flex items-center gap-3">
+          <span class="badge badge-dark">Compare</span>
+          <span class="text-[13px] text-[color:var(--graphite)]"><span id="cmpN">0</span> / 3 selected</span>
+        </div>
+        <div class="flex items-center gap-1">
+          <button id="cmpClear" class="btn btn-ghost !py-1.5 !px-3 !text-[12px]">Clear</button>
+          <button id="cmpClose" class="btn btn-ghost !py-1.5 !px-3 !text-[12px]">Close ✕</button>
+        </div>
+      </div>
+      <div class="overflow-x-auto bg-[color:var(--bg)]">
+        <table class="cmp-table w-full min-w-[720px] text-[13px]" id="cmpTable"></table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- =========== DATA + LOGIC =========== -->
+<script>
+const SOLUTIONS = [
+  {
+    id:'moto-dp4401ex', name:'Motorola DP4401Ex', vendor:'Motorola Solutions',
+    type:'DMR Portable', typeBadge:'badge-green',
+    tech:'DMR', band:'UHF', bands:['UHF'],
+    zone:'Zone 1', zones:['zone1','zone2'],
+    atex:true, iecex:true, gas:'IIC', temp:'T4', ip:'IP68',
+    power:'1W', channels:'32', battery:'2900 mAh (IMPRES)', batteryLife:'~28h',
+    weight:'370g', display:'No (non-display)', keypad:'Limited',
+    manDown:true, loneWorker:true, gps:true, bluetooth:true,
+    encryption:'AES-256', score:5, status:'production', featured:true,
+    notation:'Ex ib IIC T4 Gb · II 2G',
+    silhouette:'rugged',
+    url:'https://www.motorolasolutions.com/products/mototrbo/portable-radios/dp4000ex-series.html',
+    note:'The Motorola DP4401Ex is the non-display, non-keypad variant of the DP4000Ex series — Motorola\'s flagship ATEX DMR radio line. Zone 1 certified with GPS, Bluetooth 4.0, and IMPRES battery management. Supports DMR Tier II and Tier III trunking. IP68 submersible. Built-in Man Down and Lone Worker. The most widely deployed ATEX DMR radio in the oil & gas sector globally. Dual ATEX + IECEx + NEC/CEC certified.'
+  },
+  {
+    id:'moto-dp4801ex', name:'Motorola DP4801Ex', vendor:'Motorola Solutions',
+    type:'DMR Portable', typeBadge:'badge-green',
+    tech:'DMR', band:'UHF', bands:['UHF'],
+    zone:'Zone 1', zones:['zone1','zone2'],
+    atex:true, iecex:true, gas:'IIC', temp:'T4', ip:'IP68',
+    power:'1W', channels:'1000', battery:'2900 mAh (IMPRES)', batteryLife:'~28h',
+    weight:'389g', display:'Yes (colour)', keypad:'Full',
+    manDown:true, loneWorker:true, gps:true, bluetooth:true,
+    encryption:'AES-256', score:5, status:'production', featured:false,
+    notation:'Ex ib IIC T4 Gb · II 2G',
+    silhouette:'rugged',
+    url:'https://www.motorolasolutions.com/products/mototrbo/portable-radios/dp4000ex-series.html',
+    note:'The DP4801Ex is the full-keypad, colour-display variant of the DP4000Ex series. 1000 channels, text messaging, and full alphanumeric input. Same Zone 1 IIC T4 certification as the DP4401Ex. Ideal for operations requiring on-radio text messaging, work order management, or TMS (Text Message Service). Supports MOTOTRBO Capacity Plus and Connect Plus trunking. IP68 rated.'
+  },
+  {
+    id:'moto-mtp8550ex', name:'Motorola MTP8550Ex', vendor:'Motorola Solutions',
+    type:'TETRA Portable', typeBadge:'badge-neutral',
+    tech:'TETRA', band:'UHF', bands:['UHF'],
+    zone:'Zone 1', zones:['zone1','zone2'],
+    atex:true, iecex:true, gas:'IIC', temp:'T4', ip:'IP65',
+    power:'1W', channels:'2048', battery:'2300 mAh', batteryLife:'~20h',
+    weight:'430g', display:'Yes (colour TFT)', keypad:'Full',
+    manDown:true, loneWorker:true, gps:true, bluetooth:true,
+    encryption:'TEA2/TEA3 + E2EE', score:4, status:'production', featured:false,
+    notation:'Ex ib IIC T4 Gb · II 2G',
+    silhouette:'rugged',
+    url:'https://www.motorolasolutions.com/products/tetra/tetra-radios/mtp8000ex-series.html',
+    note:'The MTP8550Ex is Motorola\'s ATEX TETRA radio for mission-critical operations. Full keypad with colour TFT display, TEA2/TEA3 air-interface encryption plus optional end-to-end encryption. TETRA Enhanced Data Service (TEDS) for higher data throughput. Built-in GPS, Man Down, and Lone Worker. Used extensively in offshore oil & gas, petrochemical, and utility operations on TETRA networks. IP65 rated (not submersible). Dual ATEX + IECEx certified.'
+  },
+  {
+    id:'kenwood-nx230exe', name:'Kenwood NX-230EXE', vendor:'Kenwood (JVCKENWOOD)',
+    type:'NXDN/Analogue Portable', typeBadge:'badge-green',
+    tech:'NXDN', band:'VHF', bands:['VHF'],
+    zone:'Zone 1', zones:['zone1','zone2'],
+    atex:true, iecex:true, gas:'IIC', temp:'T4', ip:'IP67',
+    power:'1W', channels:'260', battery:'2000 mAh (KNB-65LEX)', batteryLife:'~14h',
+    weight:'340g', display:'Yes (LCD)', keypad:'Full',
+    manDown:true, loneWorker:true, gps:true, bluetooth:false,
+    encryption:'DES', score:4, status:'production', featured:false,
+    notation:'Ex ib IIC T4 Gb · II 2G',
+    silhouette:'rugged',
+    url:'https://kenwood.eu/comm/atex',
+    note:'The NX-230EXE is Kenwood\'s VHF ATEX radio using the NEXEDGE (NXDN) digital protocol. Mixed Mode operation allows phased migration from analogue to digital. MIL-STD-810 C/D/E/F/G compliant for shock, vibration, dust, and immersion. Built-in GPS and Lone Worker/Man Down. 260 channels with 128 zones. IP67 rated. Available with optional ATEX-certified leather carry solutions. Over 1.75 million NEXEDGE devices deployed globally. JVCKENWOOD is headquartered in Yokohama, Japan.'
+  },
+  {
+    id:'kenwood-nx330exe', name:'Kenwood NX-330EXE', vendor:'Kenwood (JVCKENWOOD)',
+    type:'NXDN/Analogue Portable', typeBadge:'badge-green',
+    tech:'NXDN', band:'UHF', bands:['UHF'],
+    zone:'Zone 1', zones:['zone1','zone2'],
+    atex:true, iecex:true, gas:'IIC', temp:'T4', ip:'IP67',
+    power:'1W', channels:'260', battery:'2000 mAh (KNB-65LEX)', batteryLife:'~14h',
+    weight:'340g', display:'Yes (LCD)', keypad:'Full',
+    manDown:true, loneWorker:true, gps:true, bluetooth:false,
+    encryption:'DES', score:4, status:'production', featured:false,
+    notation:'Ex ib IIC T4 Gb · II 2G',
+    silhouette:'rugged',
+    url:'https://kenwood.eu/comm/atex',
+    note:'The NX-330EXE is the UHF variant of Kenwood\'s ATEX NEXEDGE line. Identical certification and features to the NX-230EXE but operates on UHF frequencies (400–470 MHz), offering better in-building penetration. Same MIL-STD-810 ruggedness, IP67 rating, GPS, and Man Down/Lone Worker safety features. Supports both NXDN digital and analogue modes for backwards compatibility with legacy fleet radios.'
+  },
+  {
+    id:'sepura-stp8x', name:'Sepura STP8X000', vendor:'Sepura',
+    type:'TETRA Portable', typeBadge:'badge-neutral',
+    tech:'TETRA', band:'UHF', bands:['UHF'],
+    zone:'Zone 1', zones:['zone1','zone2'],
+    atex:true, iecex:true, gas:'IIC', temp:'T4', ip:'IP67',
+    power:'Class 4 (1.8W)', channels:'2048', battery:'1400 mAh', batteryLife:'~15h',
+    weight:'338g', display:'Yes (colour TFT)', keypad:'Full',
+    manDown:true, loneWorker:true, gps:true, bluetooth:true,
+    encryption:'TEA1–TEA3 + E2EE', score:4, status:'production', featured:false,
+    notation:'Ex ib IIC T4 Gb · II 2G',
+    silhouette:'rugged',
+    url:'https://sepura.com/devices/stp8x000-tetra-radio/',
+    note:'The Sepura STP8X000 is the first IP67 submersible TETRA intrinsically safe radio. Built in Cambridge, UK. Full keypad with high-resolution colour TFT display. TEA1–TEA3 air-interface encryption with optional end-to-end encryption. Integrated GPS with Man Down motion and tilt monitoring. Compatible with Sepura Radio Manager for fleet programming. ATEX and IECEx Zone 1 IIC T4 certified. Frequency bands: 380–430 MHz and 407–473 MHz. Operating temperature: -20°C to +55°C. Dust certified Zone 21 (IIIC T90°C Db) and mining rated (I M2 Ex ib I Mb). Note: Sepura is now part of the Hytera group but remains a UK-headquartered operation with independent product development.'
+  },
+  {
+    id:'isafe-is440', name:'i.safe MOBILE IS440.1', vendor:'i.safe MOBILE',
+    type:'PoC Radio (4G/LTE)', typeBadge:'badge-warn',
+    tech:'PoC', band:'LTE', bands:['VHF','UHF'],
+    zone:'Zone 1', zones:['zone1','zone2'],
+    atex:true, iecex:true, gas:'IIC', temp:'T4', ip:'IP68',
+    power:'N/A (cellular)', channels:'Unlimited (app)', battery:'4400 mAh', batteryLife:'~24h',
+    weight:'350g', display:'Yes (2.4" colour)', keypad:'Full',
+    manDown:true, loneWorker:true, gps:true, bluetooth:true,
+    encryption:'TLS + app-layer', score:3, status:'production', featured:false,
+    notation:'Ex ib IIC T4 Gb · II 2G',
+    silhouette:'rugged',
+    url:'https://www.isafe-mobile.com/en/products/product-range/zone-1/21/is4401',
+    note:'The i.safe MOBILE IS440.1 is a Zone 1 certified Push-to-Talk over Cellular (PoC) radio. Unlike traditional DMR/TETRA radios, it uses 4G/LTE networks for communication — no dedicated radio infrastructure required. 2.4-inch colour display, dedicated PTT button, 4400 mAh battery. Supports Wi-Fi, Bluetooth 5.0, and NFC. Compatible with multiple PoC platforms including Zello, ESChat, and TASSTA. German-engineered by i.safe MOBILE (Lauda-Königshofen, Germany). ATEX + IECEx + 7 additional scheme certifications. Best suited for organisations wanting PTT functionality without investing in repeater/base station infrastructure.'
+  }
+];
+
+const grid = document.getElementById('cardGrid');
+
+function score5(n){
+  let s='';for(let i=0;i<5;i++){s+=`<span class="score-seg ${i<n?'on':''}"></span>`;}return`<span class="score-track">${s}</span>`;
+}
+function yn(v){
+  if(v===true||v==='Yes') return `<span class="badge badge-green"><span class="hb !w-[6px] !h-[6px]"></span>Yes</span>`;
+  if(v===false||v==='No') return `<span class="badge badge-stone">No</span>`;
+  return `<span class="chip">\u2014</span>`;
+}
+function certMark(s){
+  const list=[];
+  list.push(s.atex?`<span class="chip">ATEX</span>`:`<span class="chip" style="opacity:.4;text-decoration:line-through">ATEX</span>`);
+  list.push(s.iecex?`<span class="chip">IECEx</span>`:`<span class="chip" style="opacity:.4;text-decoration:line-through">IECEx</span>`);
+  return list.join(' ');
+}
+
+function renderCards(){
+  grid.innerHTML = SOLUTIONS.map(s=>`
+    <article class="card overflow-visible relative ${s.featured?'xl:col-span-2 !border-[color:var(--ink)]':''}"
+             data-id="${s.id}"
+             data-zones="${s.zones.join(',')}"
+             data-atex="${s.atex}" data-iecex="${s.iecex}"
+             data-tech="${s.tech}"
+             data-band="${s.band}"
+             data-status="${s.status}">
+      ${s.featured?`<span class="ribbon"><span class="dot"></span>Popular · Zone 1 DMR</span>`:''}
+
+      <div class="px-7 pt-7 pb-0">
+        <div class="device-shot">
+          <div class="dev-silhouette rugged"></div>
+          <span class="ph-label">${s.vendor} · ${s.tech}</span>
+        </div>
+      </div>
+
+      <div class="p-7 pt-5 pb-5 flex items-start gap-4">
+        <label class="pt-1.5" onclick="event.stopPropagation()">
+          <input type="checkbox" class="cb cmp-cb" data-id="${s.id}" aria-label="Add to compare"/>
+        </label>
+        <div class="flex-1 min-w-0">
+          <div class="flex items-center gap-2 mb-2 flex-wrap">
+            <span class="badge ${s.typeBadge}">${s.type}</span>
+            <span class="badge badge-stone">${s.zone}</span>
+          </div>
+          <h3 class="serif h-card leading-tight">${s.name}</h3>
+          <div class="text-[13px] text-[color:var(--ash)] mt-1.5"><a href="${s.url||'#'}" target="_blank" rel="noopener" class="hover:text-[color:var(--ink)] border-b border-[color:var(--border)]">${s.vendor}</a> <span class="dash-dot"></span> ${s.tech} · ${s.band}</div>
+        </div>
+        <div class="text-right shrink-0">
+          <div class="text-[11px] text-[color:var(--ash)] mb-1.5">Score</div>
+          ${score5(s.score)}
+        </div>
+      </div>
+
+      <div class="px-7"><div class="h-px bg-[color:var(--border)]"></div></div>
+
+      <div class="px-7 py-4 ${s.featured?'grid grid-cols-1 md:grid-cols-2 gap-x-10':''}">
+        <div>
+          <div class="spec"><span class="spec-label">Certification</span><span class="spec-val flex gap-1.5 justify-end flex-wrap">${certMark(s)}</span></div>
+          <div class="spec"><span class="spec-label">Gas group</span><span class="spec-val">${s.gas}</span></div>
+          <div class="spec"><span class="spec-label">Temp class</span><span class="spec-val">${s.temp}</span></div>
+          <div class="spec"><span class="spec-label">IP rating</span><span class="spec-val">${s.ip}</span></div>
+        </div>
+        <div>
+          <div class="spec"><span class="spec-label">TX power</span><span class="spec-val">${s.power}</span></div>
+          <div class="spec"><span class="spec-label">Channels</span><span class="spec-val">${s.channels}</span></div>
+          <div class="spec"><span class="spec-label">Battery</span><span class="spec-val">${s.battery}</span></div>
+          <div class="spec"><span class="spec-label">Weight</span><span class="spec-val">${s.weight}</span></div>
+        </div>
+      </div>
+
+      <div class="px-7"><div class="h-px bg-[color:var(--border)]"></div></div>
+      <div class="px-7 py-4">
+        <div class="mono text-[11px] text-[color:var(--ash)] uppercase tracking-wider mb-2">Safety &amp; Features</div>
+        <div>
+          <div class="spec"><span class="spec-label">Man Down</span><span class="spec-val">${yn(s.manDown)}</span></div>
+          <div class="spec"><span class="spec-label">Lone Worker</span><span class="spec-val">${yn(s.loneWorker)}</span></div>
+          <div class="spec"><span class="spec-label">GPS</span><span class="spec-val">${yn(s.gps)}</span></div>
+          <div class="spec"><span class="spec-label">Bluetooth</span><span class="spec-val">${yn(s.bluetooth)}</span></div>
+          <div class="spec"><span class="spec-label">Encryption</span><span class="spec-val text-[12px]">${s.encryption}</span></div>
+          <div class="spec"><span class="spec-label">Display</span><span class="spec-val text-[12px]">${s.display}</span></div>
+          <div class="spec"><span class="spec-label">Ex notation</span><span class="spec-val">${s.notation}</span></div>
+        </div>
+      </div>
+
+      <div class="card-expand px-7 pb-6">
+        <div class="h-px bg-[color:var(--border)] mb-5"></div>
+        <div class="mono text-[11px] text-[color:var(--ash)] uppercase tracking-wider mb-2">Deployment note</div>
+        <p class="text-[14.5px] leading-[1.6] text-[color:var(--graphite)]">${s.note}</p>
+        <div class="mt-4 flex flex-wrap items-center gap-2">
+          <span class="chip-dark chip">${s.notation}</span>
+          ${s.zones.map(z=>`<span class="chip">${z.replace('zone','Zone ')}</span>`).join('')}
+          <span class="chip">${s.ip}</span>
+          <span class="chip">${s.tech}</span>
+        </div>
+      </div>
+
+      <button class="card-toggle w-full px-7 py-3.5 border-t border-[color:var(--border)] flex items-center justify-between text-left hover:bg-[color:var(--bg-alt)] transition">
+        <span class="text-[13px] text-[color:var(--graphite)]">Expand spec &amp; deployment note</span>
+        <svg class="chev" width="14" height="14" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" stroke="#888880" stroke-width="1.6" fill="none"/></svg>
+      </button>
+    </article>`).join('');
+
+  document.querySelectorAll('.card-toggle').forEach(b=>{
+    b.addEventListener('click',e=>e.currentTarget.closest('.card').classList.toggle('open'));
+  });
+  document.querySelectorAll('.cmp-cb').forEach(cb=>cb.addEventListener('change',onCompareChange));
+}
+renderCards();
+
+// Filtering
+const filters={zone:new Set(),cert:new Set(),tech:new Set(),band:new Set()};
+document.querySelectorAll('#filterBar .pill').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    const k=btn.dataset.filter,v=btn.dataset.val;
+    const pressed=btn.getAttribute('aria-pressed')==='true';
+    btn.setAttribute('aria-pressed',String(!pressed));
+    if(pressed) filters[k].delete(v); else filters[k].add(v);
+    applyFilters();
+  });
+});
+document.getElementById('clearFilters').addEventListener('click',()=>{
+  Object.values(filters).forEach(s=>s.clear());
+  document.querySelectorAll('#filterBar .pill').forEach(b=>b.setAttribute('aria-pressed','false'));
+  applyFilters();
+});
+function applyFilters(){
+  let n=0;
+  document.querySelectorAll('#cardGrid .card').forEach(card=>{
+    const zones=card.dataset.zones.split(',');
+    const atex=card.dataset.atex==='true',iecex=card.dataset.iecex==='true';
+    const tech=card.dataset.tech,band=card.dataset.band;
+    let pass=true;
+    if(filters.zone.size) pass=pass&&[...filters.zone].some(z=>zones.includes(z));
+    if(filters.cert.size) pass=pass&&(filters.cert.has('atex')?atex:true)&&(filters.cert.has('iecex')?iecex:true);
+    if(filters.tech.size) pass=pass&&filters.tech.has(tech);
+    if(filters.band.size) pass=pass&&filters.band.has(band);
+    card.style.display=pass?'':'none';
+    if(pass) n++;
+  });
+  document.getElementById('resultCount').textContent=n;
+}
+
+// Compare
+const compareSet=new Set();
+const compareBar=document.getElementById('compareBar');
+const cmpN=document.getElementById('cmpN');
+const compareCount=document.getElementById('compareCount');
+const cmpTable=document.getElementById('cmpTable');
+
+function onCompareChange(e){
+  const id=e.target.dataset.id;
+  if(e.target.checked){
+    if(compareSet.size>=3){e.target.checked=false;return;}
+    compareSet.add(id);
+  } else compareSet.delete(id);
+  refreshCompare();
+}
+function refreshCompare(){
+  cmpN.textContent=compareSet.size;
+  compareCount.textContent=compareSet.size;
+  if(compareSet.size>0) compareBar.classList.add('show'); else compareBar.classList.remove('show');
+  const sels=SOLUTIONS.filter(s=>compareSet.has(s.id));
+  if(!sels.length){cmpTable.innerHTML='';return;}
+  const rows=[
+    ['Type',s=>s.type],['Technology',s=>s.tech],['Band',s=>s.band],['Zone',s=>s.zone],
+    ['ATEX',s=>s.atex?'Yes':'No'],['IECEx',s=>s.iecex?'Yes':'No'],
+    ['Gas group',s=>s.gas],['Temp class',s=>s.temp],['IP rating',s=>s.ip],
+    ['TX power',s=>s.power],['Channels',s=>s.channels],
+    ['Battery',s=>s.battery],['Battery life',s=>s.batteryLife],['Weight',s=>s.weight],
+    ['Man Down',s=>s.manDown?'Yes':'No'],['GPS',s=>s.gps?'Yes':'No'],
+    ['Bluetooth',s=>s.bluetooth?'Yes':'No'],['Encryption',s=>s.encryption],
+    ['Display',s=>s.display],['Ex notation',s=>s.notation],['Score',s=>`${s.score}/5`]
+  ];
+  cmpTable.innerHTML=`<thead><tr>
+    <th class="!w-[22%]">Spec</th>
+    ${sels.map(s=>`<th class="!text-[color:var(--ink)] !normal-case !text-[13px]"><div class="serif text-[17px] leading-tight">${s.name}</div><div class="mono text-[11px] text-[color:var(--ash)] mt-1">${s.vendor}</div></th>`).join('')}
+  </tr></thead>
+  <tbody>${rows.map(([l,fn])=>`<tr><td class="text-[color:var(--ash)]">${l}</td>${sels.map(s=>`<td class="mono">${fn(s)}</td>`).join('')}</tr>`).join('')}</tbody>`;
+}
+document.getElementById('compareToggle').addEventListener('click',()=>{
+  if(compareSet.size===0){
+    const y=document.getElementById('solutions').getBoundingClientRect().top+window.scrollY-80;
+    window.scrollTo({top:y,behavior:'smooth'});
+  } else compareBar.classList.toggle('show');
+});
+document.getElementById('cmpClose').addEventListener('click',()=>compareBar.classList.remove('show'));
+document.getElementById('cmpClear').addEventListener('click',()=>{
+  compareSet.clear();document.querySelectorAll('.cmp-cb').forEach(cb=>cb.checked=false);refreshCompare();
+});
+
+// Contact form
+const cf=document.getElementById('contactForm');
+if(cf) cf.addEventListener('submit',async function(e){
+  e.preventDefault();
+  const btn=cf.querySelector('button[type=submit]');
+  btn.disabled=true;btn.textContent='Sending...';
+  try{
+    const r=await fetch(cf.action,{method:'POST',body:new FormData(cf),headers:{'Accept':'application/json'}});
+    if(r.ok){cf.reset();cf.style.display='none';document.getElementById('formSuccess').classList.remove('hidden');}
+    else{btn.textContent='Error — try again';btn.disabled=false;}
+  }catch{btn.textContent='Error — try again';btn.disabled=false;}
+});
+</script>
+<script>
+document.querySelectorAll('#mobileMenu a').forEach(function(a){a.addEventListener('click',function(){document.getElementById('mobileMenu').classList.add('hidden');});});
+</script>
+</body>
+</html>
