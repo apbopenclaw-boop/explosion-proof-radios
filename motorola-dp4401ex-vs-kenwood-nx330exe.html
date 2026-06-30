@@ -41,7 +41,14 @@
   .btn{display:inline-flex;align-items:center;gap:.5rem;padding:.65rem 1.4rem;border-radius:999px;font-size:.875rem;font-weight:500;transition:all .2s;border:none;text-decoration:none;}
   .btn-sec{background:#fff;color:var(--ink);border:1.5px solid rgba(0,0,0,.1);}
   .verdict{border-left:4px solid var(--accent);padding-left:1.5rem;}
+.lang-select{border:1px solid rgba(255,255,255,.15);background:rgba(0,0,0,.3);color:inherit;border-radius:6px;padding:4px 8px;font-size:12px;}
 </style>
+<link rel="alternate" hreflang="en" href="https://explosionproofradios.com/motorola-dp4401ex-vs-kenwood-nx330exe.html" />
+<link rel="alternate" hreflang="de" href="https://explosionproofradios.com/de/motorola-dp4401ex-vs-kenwood-nx330exe.html" />
+<link rel="alternate" hreflang="nl" href="https://explosionproofradios.com/nl/motorola-dp4401ex-vs-kenwood-nx330exe.html" />
+<link rel="alternate" hreflang="es" href="https://explosionproofradios.com/es/motorola-dp4401ex-vs-kenwood-nx330exe.html" />
+<link rel="alternate" hreflang="pt-br" href="https://explosionproofradios.com/pt-br/motorola-dp4401ex-vs-kenwood-nx330exe.html" />
+<link rel="alternate" hreflang="x-default" href="https://explosionproofradios.com/motorola-dp4401ex-vs-kenwood-nx330exe.html" />
 </head>
 <body class="min-h-screen">
 
@@ -51,9 +58,33 @@
     <nav class="hidden md:flex items-center gap-5 text-[14px] ml-auto" style="color:var(--graphite)">
       <a href="/" class="hover:text-[color:var(--ink)]">Home</a>
     </nav>
-  </div>
+  <button onclick="document.getElementById('mobileMenu').classList.remove('hidden')" class="md:hidden p-2 -mr-2 ml-auto" aria-label="Open menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+      </button>
+    </div>
 </header>
 
+
+<div id="mobileMenu" class="hidden fixed inset-0 z-40">
+  <div class="absolute inset-0 bg-black/30 backdrop-blur-sm" onclick="document.getElementById('mobileMenu').classList.add('hidden')"></div>
+  <div class="absolute right-0 top-0 bottom-0 w-[280px] shadow-2xl overflow-y-auto" style="background:var(--bg, #fff);border-left:1px solid rgba(0,0,0,.1);">
+    <div class="p-6 pt-5">
+      <div class="flex items-center justify-between mb-8">
+        <span class="font-semibold text-sm">Menu</span>
+        <button onclick="document.getElementById('mobileMenu').classList.add('hidden')" class="p-1.5" aria-label="Close">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <nav class="flex flex-col gap-2">
+        <a href="/" class="block py-2 text-[15px]">Home</a>
+        <div class="my-3 h-px" style="background:rgba(0,0,0,.1)"></div>
+        <select class="lang-select text-xs rounded px-2 py-1" onchange="if(this.value)window.location=this.value" aria-label="Language">
+        <option value="/" selected>🇬🇧 EN</option><option value="/de/motorola-dp4401ex-vs-kenwood-nx330exe.html" >🇩🇪 DE</option><option value="/nl/motorola-dp4401ex-vs-kenwood-nx330exe.html" >🇳🇱 NL</option><option value="/es/motorola-dp4401ex-vs-kenwood-nx330exe.html" >🇪🇸 ES</option><option value="/pt-br/motorola-dp4401ex-vs-kenwood-nx330exe.html" >🇧🇷 PT</option>
+      </select>
+      </nav>
+    </div>
+  </div>
+</div>
 <main class="max-w-[860px] mx-auto px-6 py-16">
   <div class="mb-3 text-[13px]" style="color:var(--ash)">
     <a href="/" class="hover:text-[color:var(--ink)]">Home</a> &rarr; Comparison
