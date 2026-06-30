@@ -1,0 +1,22 @@
+{
+  "site": "explosionproofradios.com",
+  "claims": [
+    {
+      "claim": "All seven radios are Zone 1 IIC T4 certified",
+      "evidence": "Verified against manufacturer certificates of conformity and product datasheets",
+      "confidence": "high"
+    },
+    {
+      "claim": "Motorola DP4401Ex is the most widely deployed ATEX DMR radio in oil & gas",
+      "evidence": "Based on manufacturer market share data and industry analyst reports",
+      "confidence": "medium"
+    },
+    {
+      "claim": "PoC radios (IS440.1) require no dedicated radio infrastructure",
+      "evidence": "PoC operates over cellular LTE networks; verified via manufacturer specifications",
+      "confidence": "high"
+    }
+  ],
+  "methodology": "Specifications sourced from manufacturer datasheets and certificates of conformity. No vendor sponsorship or affiliate relationships.",
+  "lastUpdated": "2026-06"
+}

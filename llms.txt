@@ -1,0 +1,23 @@
+# explosionproofradios.com
+
+> Compare every ATEX and IECEx certified explosion proof two-way radio for Zone 1 and Zone 2 hazardous areas.
+
+## What This Site Covers
+- ATEX and IECEx certified two-way radios (DMR, TETRA, PoC)
+- Zone 1 and Zone 2 portable radio comparison
+- Specifications verified against manufacturer certificates of conformity
+- Safety features: Man Down, Lone Worker, GPS, encryption
+
+## Radios Indexed
+- Motorola DP4401Ex (DMR, Zone 1)
+- Motorola DP4801Ex (DMR, Zone 1)
+- Motorola MTP8550Ex (TETRA, Zone 1)
+- Kenwood NX-230EXE (NXDN, Zone 1, VHF)
+- Kenwood NX-330EXE (NXDN, Zone 1, UHF)
+- Sepura STP8X000 (TETRA, Zone 1)
+- i.safe MOBILE IS440.1 (PoC/LTE, Zone 1)
+
+## Links
+- Home: https://explosionproofradios.com/
+- Sitemap: https://explosionproofradios.com/sitemap.xml
+- Full LLM content: https://explosionproofradios.com/llms-full.txt

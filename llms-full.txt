@@ -1,0 +1,33 @@
+# explosionproofradios.com — Full Content for LLMs
+
+## Overview
+Independent engineering reference comparing ATEX and IECEx certified explosion proof two-way radios. All specifications verified against manufacturer certificates of conformity. Not a vendor — no sales, no affiliate links.
+
+## Coverage
+Seven Zone 1 certified portable radios from four manufacturers, covering three radio technologies:
+- DMR (Digital Mobile Radio): Motorola DP4401Ex, DP4801Ex
+- TETRA: Motorola MTP8550Ex, Sepura STP8X000
+- NXDN (NEXEDGE): Kenwood NX-230EXE (VHF), NX-330EXE (UHF)
+- PoC (Push-to-Talk over Cellular): i.safe MOBILE IS440.1
+
+## Key Comparison Points
+All seven radios share: Zone 1 certification, Gas Group IIC, Temperature Class T4, Man Down, Lone Worker, GPS.
+
+Differentiators:
+- IP rating: IP68 (most) vs IP65 (MTP8550Ex) vs IP67 (Kenwood, Sepura)
+- Battery life: 14h (Kenwood) to 28h (Motorola DMR)
+- Encryption: AES-256 (DMR), TEA2/TEA3 (TETRA), TLS (PoC), DES (Kenwood)
+- Bluetooth: all except Kenwood NX-230/330EXE
+- Infrastructure: DMR/TETRA need repeaters; PoC uses cellular network
+
+## Technology Guide
+- DMR: best for mid-size fleets, good battery life, affordable infrastructure
+- TETRA: mission-critical voice, best encryption, higher infrastructure cost
+- NXDN: Kenwood proprietary, good for mixed analogue/digital migration
+- PoC: no radio infrastructure needed, unlimited range via LTE, app-based
+
+## Certification Explained
+- All radios carry dual ATEX + IECEx certification
+- Protection concept: Ex ib IIC T4 Gb (intrinsic safety, Gas Group IIC, T4)
+- Equipment category: II 2G (Group II, Category 2, Gas)
+- Zone 1: explosive atmosphere likely to occur occasionally in normal operation

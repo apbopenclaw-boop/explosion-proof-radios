@@ -1,0 +1,11 @@
+{
+  "name": "explosionproofradios.com",
+  "description": "Independent comparison of ATEX and IECEx certified explosion proof two-way radios for hazardous areas",
+  "url": "https://explosionproofradios.com",
+  "documentation": "https://explosionproofradios.com/llms.txt",
+  "full_content": "https://explosionproofradios.com/llms-full.txt",
+  "structured_claims": "https://explosionproofradios.com/reasoning.json",
+  "sitemap": "https://explosionproofradios.com/sitemap.xml",
+  "contact": null,
+  "topics": ["ATEX", "IECEx", "explosion proof radios", "two-way radios", "hazardous areas", "Zone 1", "DMR", "TETRA"]
+}
