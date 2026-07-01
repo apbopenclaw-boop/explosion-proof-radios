@@ -40,9 +40,9 @@
     --space-section:clamp(5rem, 3rem + 5.5vw, 9rem);
   }
   html,body{background:var(--bg);color:var(--ink);}
-  body{font-family:&#x27;Inter&#x27;,system-ui,sans-serif;-webkit-font-smoothing:antialiased;font-feature-settings:&quot;ss01&quot;,&quot;cv11&quot;;}
-  .serif{font-family:&#x27;Instrument Serif&#x27;,&#x27;Times New Roman&#x27;,serif;font-weight:400;letter-spacing:-0.01em;line-height:1.1;}
-  .mono{font-family:&#x27;JetBrains Mono&#x27;,ui-monospace,monospace;font-variant-ligatures:none;}
+  body{font-family:'Inter',system-ui,sans-serif;-webkit-font-smoothing:antialiased;font-feature-settings:"ss01","cv11";}
+  .serif{font-family:'Instrument Serif','Times New Roman',serif;font-weight:400;letter-spacing:-0.01em;line-height:1.1;}
+  .mono{font-family:'JetBrains Mono',ui-monospace,monospace;font-variant-ligatures:none;}
   .glass{background:rgba(255,255,255,0.72);backdrop-filter:blur(20px) saturate(1.4);-webkit-backdrop-filter:blur(20px) saturate(1.4);border-bottom:1px solid rgba(224,220,214,0.6);}
   .paper-bg{background:radial-gradient(1200px 600px at 80% -10%,rgba(245,158,11,0.06),transparent 60%),radial-gradient(1000px 500px at 10% 30%,rgba(34,197,94,0.05),transparent 55%),linear-gradient(180deg,#faf8f4 0%,#ffffff 60%);}
   .grain{position:absolute;inset:0;pointer-events:none;opacity:.35;background-image:radial-gradient(rgba(0,0,0,0.05) 1px,transparent 1px);background-size:3px 3px;mix-blend-mode:multiply;}
@@ -61,14 +61,14 @@
   .badge-neutral{background:var(--bg-alt);color:var(--graphite);border:1px solid var(--border);}
   .badge-stone{background:var(--surface);color:var(--graphite);}
   .badge-dark{background:var(--void);color:#fff;}
-  .chip{display:inline-flex;align-items:center;gap:.35rem;padding:3px 8px;border-radius:6px;background:var(--bg-alt);border:1px solid var(--border);font-family:&#x27;JetBrains Mono&#x27;,monospace;font-size:11.5px;color:var(--graphite);}
+  .chip{display:inline-flex;align-items:center;gap:.35rem;padding:3px 8px;border-radius:6px;background:var(--bg-alt);border:1px solid var(--border);font-family:'JetBrains Mono',monospace;font-size:11.5px;color:var(--graphite);}
   .chip-dark{background:var(--void);color:#e8ebe4;border-color:#222;}
   .pill{font-size:.82rem;padding:.45rem 1rem;border-radius:var(--radius-pill);border:1.5px solid var(--border);color:var(--graphite);background:var(--bg);transition:all .15s;cursor:pointer;font-weight:500;}
   .pill:hover{border-color:var(--ink);color:var(--ink);}
-  .pill[aria-pressed=&quot;true&quot;]{background:var(--ink);color:#fff;border-color:var(--ink);}
+  .pill[aria-pressed="true"]{background:var(--ink);color:#fff;border-color:var(--ink);}
   .hb{position:relative;display:inline-flex;width:10px;height:10px;}
-  .hb::after{content:&quot;&quot;;position:absolute;inset:0;border-radius:50%;background:var(--active);box-shadow:0 0 0 0 rgba(34,197,94,.6);animation:hb 2s ease-in-out infinite;}
-  .hb::before{content:&quot;&quot;;position:absolute;inset:0;border-radius:50%;background:var(--active);}
+  .hb::after{content:"";position:absolute;inset:0;border-radius:50%;background:var(--active);box-shadow:0 0 0 0 rgba(34,197,94,.6);animation:hb 2s ease-in-out infinite;}
+  .hb::before{content:"";position:absolute;inset:0;border-radius:50%;background:var(--active);}
   @keyframes hb{0%{box-shadow:0 0 0 0 rgba(34,197,94,.45);transform:scale(1);}70%{box-shadow:0 0 0 10px rgba(34,197,94,0);transform:scale(1.18);}100%{box-shadow:0 0 0 0 rgba(34,197,94,0);transform:scale(1);}}
   .score-track{display:inline-flex;gap:3px;}
   .score-seg{width:14px;height:5px;border-radius:2px;background:var(--border);}
@@ -78,20 +78,20 @@
   .spec{display:grid;grid-template-columns:1fr auto;gap:12px;padding:11px 0;align-items:center;border-top:1px solid var(--border);}
   .spec:first-child{border-top:0;}
   .spec-label{font-size:.78rem;color:var(--ash);letter-spacing:.01em;}
-  .spec-val{font-family:&#x27;JetBrains Mono&#x27;,monospace;font-size:.82rem;color:var(--ink);text-align:right;white-space:nowrap;}
+  .spec-val{font-family:'JetBrains Mono',monospace;font-size:.82rem;color:var(--ink);text-align:right;white-space:nowrap;}
   .device-shot{aspect-ratio:4/3;background:repeating-linear-gradient(135deg,rgba(0,0,0,0.035) 0 1px,transparent 1px 14px),linear-gradient(180deg,var(--bg-alt),var(--surface));border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;border:1px solid var(--border);}
   .device-shot.featured-shot{aspect-ratio:16/9;}
   .device-shot .dev-silhouette{width:30%;height:72%;border:1.5px solid rgba(26,26,26,0.28);border-radius:8px;background:linear-gradient(180deg,rgba(255,255,255,0.5),rgba(255,255,255,0.1));position:relative;box-shadow:0 16px 40px -18px rgba(0,0,0,0.18);}
   .device-shot .dev-silhouette.rugged{border-radius:6px;width:26%;border-width:2.5px;}
-  .device-shot .dev-silhouette::before{content:&quot;&quot;;position:absolute;left:15%;right:15%;top:12%;bottom:20%;border:1px dashed rgba(26,26,26,0.18);border-radius:4px;}
-  .device-shot .dev-silhouette::after{content:&quot;&quot;;position:absolute;left:35%;right:35%;top:5%;height:3px;background:rgba(26,26,26,0.25);border-radius:2px;}
-  .device-shot .ph-label{position:absolute;left:12px;bottom:10px;font-family:&#x27;JetBrains Mono&#x27;,monospace;font-size:10.5px;color:var(--ash);background:rgba(255,255,255,0.75);padding:2px 7px;border-radius:4px;backdrop-filter:blur(4px);}
+  .device-shot .dev-silhouette::before{content:"";position:absolute;left:15%;right:15%;top:12%;bottom:20%;border:1px dashed rgba(26,26,26,0.18);border-radius:4px;}
+  .device-shot .dev-silhouette::after{content:"";position:absolute;left:35%;right:35%;top:5%;height:3px;background:rgba(26,26,26,0.25);border-radius:2px;}
+  .device-shot .ph-label{position:absolute;left:12px;bottom:10px;font-family:'JetBrains Mono',monospace;font-size:10.5px;color:var(--ash);background:rgba(255,255,255,0.75);padding:2px 7px;border-radius:4px;backdrop-filter:blur(4px);}
   .device-shot img{width:100%;height:100%;object-fit:cover;display:block;}
-  .ribbon{position:absolute;top:-10px;left:20px;background:var(--ink);color:#fff;font-family:&#x27;JetBrains Mono&#x27;,monospace;font-size:11px;padding:4px 12px;border-radius:var(--radius-pill);display:inline-flex;align-items:center;gap:6px;box-shadow:0 8px 24px -10px rgba(0,0,0,.2);}
+  .ribbon{position:absolute;top:-10px;left:20px;background:var(--ink);color:#fff;font-family:'JetBrains Mono',monospace;font-size:11px;padding:4px 12px;border-radius:var(--radius-pill);display:inline-flex;align-items:center;gap:6px;box-shadow:0 8px 24px -10px rgba(0,0,0,.2);}
   .ribbon .dot{width:6px;height:6px;border-radius:50%;background:var(--active);}
   .cb{appearance:none;width:18px;height:18px;border:1.5px solid var(--border-strong);background:var(--bg);display:inline-grid;place-items:center;cursor:pointer;border-radius:5px;}
   .cb:checked{background:var(--ink);border-color:var(--ink);}
-  .cb:checked::after{content:&quot;&quot;;width:4px;height:8px;border:solid #fff;border-width:0 2px 2px 0;transform:rotate(45deg) translate(-1px,-1px);}
+  .cb:checked::after{content:"";width:4px;height:8px;border:solid #fff;border-width:0 2px 2px 0;transform:rotate(45deg) translate(-1px,-1px);}
   .cmp-table th,.cmp-table td{padding:13px 16px;vertical-align:top;border-top:1px solid var(--border);text-align:left;}
   .cmp-table th{background:var(--bg-alt);color:var(--ash);font-size:.76rem;font-weight:500;letter-spacing:.03em;text-transform:uppercase;}
   .cmp-table tr:first-child td{border-top:0;}
@@ -114,8 +114,8 @@
   ::-webkit-scrollbar{width:10px;height:10px;}
   ::-webkit-scrollbar-track{background:transparent;}
   ::-webkit-scrollbar-thumb{background:var(--border-strong);border-radius:5px;}
-  .dash-dot::before{content:&quot;·&quot;;margin:0 .5em;color:var(--ash);}
-  .pullquote{font-family:&#x27;Instrument Serif&#x27;,serif;font-size:clamp(1.6rem,2.6vw,2.2rem);line-height:1.25;letter-spacing:-.01em;color:var(--ink);}
+  .dash-dot::before{content:"·";margin:0 .5em;color:var(--ash);}
+  .pullquote{font-family:'Instrument Serif',serif;font-size:clamp(1.6rem,2.6vw,2.2rem);line-height:1.25;letter-spacing:-.01em;color:var(--ink);}
   .col-rule{border-left:1px solid var(--border);}
   @media(max-width:1023px){.col-rule{border-left:0;border-top:1px solid var(--border);padding-top:2rem;margin-top:2rem;}}
   .mobile-drawer{background:var(--bg);border-left:1px solid var(--border);}
@@ -125,114 +125,114 @@
 </style>
 <script type="application/ld+json">
 {
-  &quot;@context&quot;: &quot;https://schema.org&quot;,
-  &quot;@type&quot;: &quot;WebSite&quot;,
-  &quot;name&quot;: &quot;explosionproofradios.com&quot;,
-  &quot;url&quot;: &quot;https://explosionproofradios.com/&quot;,
-  &quot;description&quot;: &quot;Engineering reference for ATEX and IECEx certified explosion proof two-way radios and communication equipment for hazardous areas.&quot;
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "explosionproofradios.com",
+  "url": "https://explosionproofradios.com/",
+  "description": "Engineering reference for ATEX and IECEx certified explosion proof two-way radios and communication equipment for hazardous areas."
 }
 </script>
 <script type="application/ld+json">[
   {
-    &quot;@context&quot;: &quot;https://schema.org&quot;,
-    &quot;@type&quot;: &quot;Product&quot;,
-    &quot;name&quot;: &quot;Motorola Solutions DP4401Ex&quot;,
-    &quot;description&quot;: &quot;Zone 1 ATEX and IECEx certified DMR portable two-way radio. Ex ib IIC T4 Gb with IP68 rating, GPS, Bluetooth, and Man Down alert.&quot;,
-    &quot;brand&quot;: {&quot;@type&quot;: &quot;Brand&quot;, &quot;name&quot;: &quot;Motorola Solutions&quot;},
-    &quot;category&quot;: &quot;Explosion Proof Two-Way Radios&quot;
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Motorola Solutions DP4401Ex",
+    "description": "Zone 1 ATEX and IECEx certified DMR portable two-way radio. Ex ib IIC T4 Gb with IP68 rating, GPS, Bluetooth, and Man Down alert.",
+    "brand": {"@type": "Brand", "name": "Motorola Solutions"},
+    "category": "Explosion Proof Two-Way Radios"
   },
   {
-    &quot;@context&quot;: &quot;https://schema.org&quot;,
-    &quot;@type&quot;: &quot;Product&quot;,
-    &quot;name&quot;: &quot;Motorola Solutions DP4801Ex&quot;,
-    &quot;description&quot;: &quot;Zone 1 ATEX and IECEx certified DMR portable two-way radio with full keypad and display. Ex ib IIC T4 Gb, IP68, GPS, Bluetooth.&quot;,
-    &quot;brand&quot;: {&quot;@type&quot;: &quot;Brand&quot;, &quot;name&quot;: &quot;Motorola Solutions&quot;},
-    &quot;category&quot;: &quot;Explosion Proof Two-Way Radios&quot;
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Motorola Solutions DP4801Ex",
+    "description": "Zone 1 ATEX and IECEx certified DMR portable two-way radio with full keypad and display. Ex ib IIC T4 Gb, IP68, GPS, Bluetooth.",
+    "brand": {"@type": "Brand", "name": "Motorola Solutions"},
+    "category": "Explosion Proof Two-Way Radios"
   },
   {
-    &quot;@context&quot;: &quot;https://schema.org&quot;,
-    &quot;@type&quot;: &quot;Product&quot;,
-    &quot;name&quot;: &quot;Motorola Solutions MTP8550Ex&quot;,
-    &quot;description&quot;: &quot;Zone 1 ATEX and IECEx certified TETRA portable radio. Ex ib IIC T4 Gb with IP65, GPS, Man Down, and mission-critical TETRA voice.&quot;,
-    &quot;brand&quot;: {&quot;@type&quot;: &quot;Brand&quot;, &quot;name&quot;: &quot;Motorola Solutions&quot;},
-    &quot;category&quot;: &quot;Explosion Proof Two-Way Radios&quot;
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Motorola Solutions MTP8550Ex",
+    "description": "Zone 1 ATEX and IECEx certified TETRA portable radio. Ex ib IIC T4 Gb with IP65, GPS, Man Down, and mission-critical TETRA voice.",
+    "brand": {"@type": "Brand", "name": "Motorola Solutions"},
+    "category": "Explosion Proof Two-Way Radios"
   },
   {
-    &quot;@context&quot;: &quot;https://schema.org&quot;,
-    &quot;@type&quot;: &quot;Product&quot;,
-    &quot;name&quot;: &quot;Kenwood NX-230EXE&quot;,
-    &quot;description&quot;: &quot;VHF NEXEDGE ATEX/IECEx digital/analogue portable radio with GPS. Zone 1 certified Ex ib IIC T4 Gb. MIL-STD-810 rugged.&quot;,
-    &quot;brand&quot;: {&quot;@type&quot;: &quot;Brand&quot;, &quot;name&quot;: &quot;Kenwood (JVCKENWOOD)&quot;},
-    &quot;category&quot;: &quot;Explosion Proof Two-Way Radios&quot;
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Kenwood NX-230EXE",
+    "description": "VHF NEXEDGE ATEX/IECEx digital/analogue portable radio with GPS. Zone 1 certified Ex ib IIC T4 Gb. MIL-STD-810 rugged.",
+    "brand": {"@type": "Brand", "name": "Kenwood (JVCKENWOOD)"},
+    "category": "Explosion Proof Two-Way Radios"
   },
   {
-    &quot;@context&quot;: &quot;https://schema.org&quot;,
-    &quot;@type&quot;: &quot;Product&quot;,
-    &quot;name&quot;: &quot;Kenwood NX-330EXE&quot;,
-    &quot;description&quot;: &quot;UHF NEXEDGE ATEX/IECEx digital/analogue portable radio with GPS. Zone 1 certified Ex ib IIC T4 Gb. MIL-STD-810 rugged.&quot;,
-    &quot;brand&quot;: {&quot;@type&quot;: &quot;Brand&quot;, &quot;name&quot;: &quot;Kenwood (JVCKENWOOD)&quot;},
-    &quot;category&quot;: &quot;Explosion Proof Two-Way Radios&quot;
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Kenwood NX-330EXE",
+    "description": "UHF NEXEDGE ATEX/IECEx digital/analogue portable radio with GPS. Zone 1 certified Ex ib IIC T4 Gb. MIL-STD-810 rugged.",
+    "brand": {"@type": "Brand", "name": "Kenwood (JVCKENWOOD)"},
+    "category": "Explosion Proof Two-Way Radios"
   },
   {
-    &quot;@context&quot;: &quot;https://schema.org&quot;,
-    &quot;@type&quot;: &quot;Product&quot;,
-    &quot;name&quot;: &quot;Sepura STP8X000&quot;,
-    &quot;description&quot;: &quot;Zone 1 ATEX and IECEx certified TETRA hand-portable radio. Ex ib IIC T4 Gb with IP67, GPS, Man Down, and full keypad.&quot;,
-    &quot;brand&quot;: {&quot;@type&quot;: &quot;Brand&quot;, &quot;name&quot;: &quot;Sepura&quot;},
-    &quot;category&quot;: &quot;Explosion Proof Two-Way Radios&quot;
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Sepura STP8X000",
+    "description": "Zone 1 ATEX and IECEx certified TETRA hand-portable radio. Ex ib IIC T4 Gb with IP67, GPS, Man Down, and full keypad.",
+    "brand": {"@type": "Brand", "name": "Sepura"},
+    "category": "Explosion Proof Two-Way Radios"
   },
   {
-    &quot;@context&quot;: &quot;https://schema.org&quot;,
-    &quot;@type&quot;: &quot;Product&quot;,
-    &quot;name&quot;: &quot;i.safe MOBILE IS440.1&quot;,
-    &quot;description&quot;: &quot;Zone 1 ATEX and IECEx certified 4G/LTE Push-to-Talk over Cellular (PoC) radio. Ex ib IIC T4 Gb with IP68, GPS, Wi-Fi, and Bluetooth.&quot;,
-    &quot;brand&quot;: {&quot;@type&quot;: &quot;Brand&quot;, &quot;name&quot;: &quot;i.safe MOBILE&quot;},
-    &quot;category&quot;: &quot;Explosion Proof Two-Way Radios&quot;
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "i.safe MOBILE IS440.1",
+    "description": "Zone 1 ATEX and IECEx certified 4G/LTE Push-to-Talk over Cellular (PoC) radio. Ex ib IIC T4 Gb with IP68, GPS, Wi-Fi, and Bluetooth.",
+    "brand": {"@type": "Brand", "name": "i.safe MOBILE"},
+    "category": "Explosion Proof Two-Way Radios"
   }
 ]</script>
 <script type="application/ld+json">
 {
-  &quot;@context&quot;: &quot;https://schema.org&quot;,
-  &quot;@type&quot;: &quot;FAQPage&quot;,
-  &quot;mainEntity&quot;: [
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
     {
-      &quot;@type&quot;: &quot;Question&quot;,
-      &quot;name&quot;: &quot;What is an explosion proof radio?&quot;,
-      &quot;acceptedAnswer&quot;: {
-        &quot;@type&quot;: &quot;Answer&quot;,
-        &quot;text&quot;: &quot;An explosion proof radio is a two-way communication device certified under ATEX or IECEx standards for use in explosive atmospheres. The device limits electrical and thermal energy so it cannot ignite flammable gases, vapours or dust. Most ATEX radios use intrinsic safety (Ex ib) protection, meaning the circuits are designed so that no fault condition can produce enough energy to cause ignition.&quot;
+      "@type": "Question",
+      "name": "What is an explosion proof radio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An explosion proof radio is a two-way communication device certified under ATEX or IECEx standards for use in explosive atmospheres. The device limits electrical and thermal energy so it cannot ignite flammable gases, vapours or dust. Most ATEX radios use intrinsic safety (Ex ib) protection, meaning the circuits are designed so that no fault condition can produce enough energy to cause ignition."
       }
     },
     {
-      &quot;@type&quot;: &quot;Question&quot;,
-      &quot;name&quot;: &quot;What is the difference between DMR, TETRA, and PoC radios?&quot;,
-      &quot;acceptedAnswer&quot;: {
-        &quot;@type&quot;: &quot;Answer&quot;,
-        &quot;text&quot;: &quot;DMR (Digital Mobile Radio) is an open standard for digital two-way radio, widely used in commercial and industrial settings. TETRA (Terrestrial Trunked Radio) is a mission-critical standard used by emergency services and large industrial operations, offering group calls, encryption, and high reliability. PoC (Push-to-Talk over Cellular) radios use 4G/5G mobile networks instead of dedicated radio infrastructure, offering wider coverage but depending on cellular availability.&quot;
+      "@type": "Question",
+      "name": "What is the difference between DMR, TETRA, and PoC radios?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "DMR (Digital Mobile Radio) is an open standard for digital two-way radio, widely used in commercial and industrial settings. TETRA (Terrestrial Trunked Radio) is a mission-critical standard used by emergency services and large industrial operations, offering group calls, encryption, and high reliability. PoC (Push-to-Talk over Cellular) radios use 4G/5G mobile networks instead of dedicated radio infrastructure, offering wider coverage but depending on cellular availability."
       }
     },
     {
-      &quot;@type&quot;: &quot;Question&quot;,
-      &quot;name&quot;: &quot;Can I use a normal radio in a hazardous area?&quot;,
-      &quot;acceptedAnswer&quot;: {
-        &quot;@type&quot;: &quot;Answer&quot;,
-        &quot;text&quot;: &quot;No. Standard two-way radios are not certified for explosive atmospheres and can produce sparks or heat sufficient to ignite flammable gases or dust. Only ATEX or IECEx certified radios may be used in classified hazardous areas. Using uncertified equipment in a Zone 1 or Zone 2 area is a notifiable offence under DSEAR (UK) and the ATEX Worker Protection Directive 1999/92/EC (EU).&quot;
+      "@type": "Question",
+      "name": "Can I use a normal radio in a hazardous area?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Standard two-way radios are not certified for explosive atmospheres and can produce sparks or heat sufficient to ignite flammable gases or dust. Only ATEX or IECEx certified radios may be used in classified hazardous areas. Using uncertified equipment in a Zone 1 or Zone 2 area is a notifiable offence under DSEAR (UK) and the ATEX Worker Protection Directive 1999/92/EC (EU)."
       }
     },
     {
-      &quot;@type&quot;: &quot;Question&quot;,
-      &quot;name&quot;: &quot;What certifications are required for a radio in Zone 1?&quot;,
-      &quot;acceptedAnswer&quot;: {
-        &quot;@type&quot;: &quot;Answer&quot;,
-        &quot;text&quot;: &quot;A radio used in Zone 1 requires Equipment Group II Category 2G certification. In the EU/EEA, ATEX certification under Directive 2014/34/EU is mandatory. For international deployments, IECEx certification is accepted in over 30 countries. The protection concept is typically Ex ib (intrinsic safety). Dual-certified devices (both ATEX and IECEx) provide maximum deployment flexibility.&quot;
+      "@type": "Question",
+      "name": "What certifications are required for a radio in Zone 1?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A radio used in Zone 1 requires Equipment Group II Category 2G certification. In the EU/EEA, ATEX certification under Directive 2014/34/EU is mandatory. For international deployments, IECEx certification is accepted in over 30 countries. The protection concept is typically Ex ib (intrinsic safety). Dual-certified devices (both ATEX and IECEx) provide maximum deployment flexibility."
       }
     },
     {
-      &quot;@type&quot;: &quot;Question&quot;,
-      &quot;name&quot;: &quot;Which explosion proof radio is best for oil and gas?&quot;,
-      &quot;acceptedAnswer&quot;: {
-        &quot;@type&quot;: &quot;Answer&quot;,
-        &quot;text&quot;: &quot;For oil and gas operations, DMR radios like the Motorola DP4401Ex or DP4801Ex are widely deployed due to their robust DMR Tier II/III capabilities, GPS tracking, and Man Down safety features. For sites with existing TETRA infrastructure, the Motorola MTP8550Ex or Sepura STP8X000 provide mission-critical voice with end-to-end encryption. All are Zone 1 IIC T4 certified, covering hydrogen-class atmospheres found in refineries.&quot;
+      "@type": "Question",
+      "name": "Which explosion proof radio is best for oil and gas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For oil and gas operations, DMR radios like the Motorola DP4401Ex or DP4801Ex are widely deployed due to their robust DMR Tier II/III capabilities, GPS tracking, and Man Down safety features. For sites with existing TETRA infrastructure, the Motorola MTP8550Ex or Sepura STP8X000 provide mission-critical voice with end-to-end encryption. All are Zone 1 IIC T4 certified, covering hydrogen-class atmospheres found in refineries."
       }
     }
   ]
@@ -240,13 +240,16 @@
 </script>
 <!-- GA4 Hazardous Area Guide Network -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-QEDX15F4NW"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag(&#x27;js&#x27;,new Date());gtag(&#x27;config&#x27;,&#x27;G-QEDX15F4NW&#x27;);</script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-QEDX15F4NW');</script>
 <link rel="alternate" hreflang="nl" href="https://explosionproofradios.com/nl/" />
 <link rel="alternate" hreflang="de" href="https://explosionproofradios.com/de/" />
 <link rel="alternate" hreflang="nl" href="https://explosionproofradios.com/nl/" />
 <link rel="alternate" hreflang="es" href="https://explosionproofradios.com/es/" />
 <link rel="alternate" hreflang="pt-br" href="https://explosionproofradios.com/pt-br/" />
 <link rel="alternate" hreflang="x-default" href="https://explosionproofradios.com/nl/" />
+<!-- GA4 Hazardous Area Guide Network -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-53EXCZ857W"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-53EXCZ857W');</script>
 </head>
 <body class="min-h-screen">
 
@@ -713,267 +716,267 @@
 <script>
 const SOLUTIONS = [
   {
-    id:&#x27;moto-dp4401ex&#x27;, name:&#x27;Motorola DP4401Ex&#x27;, vendor:&#x27;Motorola Solutions&#x27;,
-    type:&#x27;DMR Portable&#x27;, typeBadge:&#x27;badge-green&#x27;,
-    tech:&#x27;DMR&#x27;, band:&#x27;UHF&#x27;, bands:[&#x27;UHF&#x27;],
-    zone:&#x27;Zone 1&#x27;, zones:[&#x27;zone1&#x27;,&#x27;zone2&#x27;],
-    atex:true, iecex:true, gas:&#x27;IIC&#x27;, temp:&#x27;T4&#x27;, ip:&#x27;IP68&#x27;,
-    power:&#x27;1W&#x27;, channels:&#x27;32&#x27;, battery:&#x27;2900 mAh (IMPRES)&#x27;, batteryLife:&#x27;~28h&#x27;,
-    weight:&#x27;370g&#x27;, display:&#x27;No (non-display)&#x27;, keypad:&#x27;Limited&#x27;,
+    id:'moto-dp4401ex', name:'Motorola DP4401Ex', vendor:'Motorola Solutions',
+    type:'DMR Portable', typeBadge:'badge-green',
+    tech:'DMR', band:'UHF', bands:['UHF'],
+    zone:'Zone 1', zones:['zone1','zone2'],
+    atex:true, iecex:true, gas:'IIC', temp:'T4', ip:'IP68',
+    power:'1W', channels:'32', battery:'2900 mAh (IMPRES)', batteryLife:'~28h',
+    weight:'370g', display:'No (non-display)', keypad:'Limited',
     manDown:true, loneWorker:true, gps:true, bluetooth:true,
-    encryption:&#x27;AES-256&#x27;, score:5, status:&#x27;production&#x27;, featured:true,
-    notation:&#x27;Ex ib IIC T4 Gb · II 2G&#x27;,
-    silhouette:&#x27;rugged&#x27;,
-    image:&#x27;images/moto-dp4401ex.jpg&#x27;,
-    url:&#x27;https://www.motorolasolutions.com/products/mototrbo/portable-radios/dp4000ex-series.html&#x27;,
-    note:&#x27;The Motorola DP4401Ex is the non-display, non-keypad variant of the DP4000Ex series — Motorola\&#x27;s flagship ATEX DMR radio line. Zone 1 certified with GPS, Bluetooth 4.0, and IMPRES battery management. Supports DMR Tier II and Tier III trunking. IP68 submersible. Built-in Man Down and Lone Worker. The most widely deployed ATEX DMR radio in the oil &amp; gas sector globally. Dual ATEX + IECEx + NEC/CEC certified.&#x27;
+    encryption:'AES-256', score:5, status:'production', featured:true,
+    notation:'Ex ib IIC T4 Gb · II 2G',
+    silhouette:'rugged',
+    image:'images/moto-dp4401ex.jpg',
+    url:'https://www.motorolasolutions.com/products/mototrbo/portable-radios/dp4000ex-series.html',
+    note:'The Motorola DP4401Ex is the non-display, non-keypad variant of the DP4000Ex series — Motorola\'s flagship ATEX DMR radio line. Zone 1 certified with GPS, Bluetooth 4.0, and IMPRES battery management. Supports DMR Tier II and Tier III trunking. IP68 submersible. Built-in Man Down and Lone Worker. The most widely deployed ATEX DMR radio in the oil & gas sector globally. Dual ATEX + IECEx + NEC/CEC certified.'
   },
   {
-    id:&#x27;moto-dp4801ex&#x27;, name:&#x27;Motorola DP4801Ex&#x27;, vendor:&#x27;Motorola Solutions&#x27;,
-    type:&#x27;DMR Portable&#x27;, typeBadge:&#x27;badge-green&#x27;,
-    tech:&#x27;DMR&#x27;, band:&#x27;UHF&#x27;, bands:[&#x27;UHF&#x27;],
-    zone:&#x27;Zone 1&#x27;, zones:[&#x27;zone1&#x27;,&#x27;zone2&#x27;],
-    atex:true, iecex:true, gas:&#x27;IIC&#x27;, temp:&#x27;T4&#x27;, ip:&#x27;IP68&#x27;,
-    power:&#x27;1W&#x27;, channels:&#x27;1000&#x27;, battery:&#x27;2900 mAh (IMPRES)&#x27;, batteryLife:&#x27;~28h&#x27;,
-    weight:&#x27;389g&#x27;, display:&#x27;Yes (colour)&#x27;, keypad:&#x27;Full&#x27;,
+    id:'moto-dp4801ex', name:'Motorola DP4801Ex', vendor:'Motorola Solutions',
+    type:'DMR Portable', typeBadge:'badge-green',
+    tech:'DMR', band:'UHF', bands:['UHF'],
+    zone:'Zone 1', zones:['zone1','zone2'],
+    atex:true, iecex:true, gas:'IIC', temp:'T4', ip:'IP68',
+    power:'1W', channels:'1000', battery:'2900 mAh (IMPRES)', batteryLife:'~28h',
+    weight:'389g', display:'Yes (colour)', keypad:'Full',
     manDown:true, loneWorker:true, gps:true, bluetooth:true,
-    encryption:&#x27;AES-256&#x27;, score:5, status:&#x27;production&#x27;, featured:false,
-    notation:&#x27;Ex ib IIC T4 Gb · II 2G&#x27;,
-    silhouette:&#x27;rugged&#x27;,
-    image:&#x27;images/moto-dp4801ex.jpg&#x27;,
-    url:&#x27;https://www.motorolasolutions.com/products/mototrbo/portable-radios/dp4000ex-series.html&#x27;,
-    note:&#x27;The DP4801Ex is the full-keypad, colour-display variant of the DP4000Ex series. 1000 channels, text messaging, and full alphanumeric input. Same Zone 1 IIC T4 certification as the DP4401Ex. Ideal for operations requiring on-radio text messaging, work order management, or TMS (Text Message Service). Supports MOTOTRBO Capacity Plus and Connect Plus trunking. IP68 rated.&#x27;
+    encryption:'AES-256', score:5, status:'production', featured:false,
+    notation:'Ex ib IIC T4 Gb · II 2G',
+    silhouette:'rugged',
+    image:'images/moto-dp4801ex.jpg',
+    url:'https://www.motorolasolutions.com/products/mototrbo/portable-radios/dp4000ex-series.html',
+    note:'The DP4801Ex is the full-keypad, colour-display variant of the DP4000Ex series. 1000 channels, text messaging, and full alphanumeric input. Same Zone 1 IIC T4 certification as the DP4401Ex. Ideal for operations requiring on-radio text messaging, work order management, or TMS (Text Message Service). Supports MOTOTRBO Capacity Plus and Connect Plus trunking. IP68 rated.'
   },
   {
-    id:&#x27;moto-mtp8550ex&#x27;, name:&#x27;Motorola MTP8550Ex&#x27;, vendor:&#x27;Motorola Solutions&#x27;,
-    type:&#x27;TETRA Portable&#x27;, typeBadge:&#x27;badge-neutral&#x27;,
-    tech:&#x27;TETRA&#x27;, band:&#x27;UHF&#x27;, bands:[&#x27;UHF&#x27;],
-    zone:&#x27;Zone 1&#x27;, zones:[&#x27;zone1&#x27;,&#x27;zone2&#x27;],
-    atex:true, iecex:true, gas:&#x27;IIC&#x27;, temp:&#x27;T4&#x27;, ip:&#x27;IP65&#x27;,
-    power:&#x27;1W&#x27;, channels:&#x27;2048&#x27;, battery:&#x27;2300 mAh&#x27;, batteryLife:&#x27;~20h&#x27;,
-    weight:&#x27;430g&#x27;, display:&#x27;Yes (colour TFT)&#x27;, keypad:&#x27;Full&#x27;,
+    id:'moto-mtp8550ex', name:'Motorola MTP8550Ex', vendor:'Motorola Solutions',
+    type:'TETRA Portable', typeBadge:'badge-neutral',
+    tech:'TETRA', band:'UHF', bands:['UHF'],
+    zone:'Zone 1', zones:['zone1','zone2'],
+    atex:true, iecex:true, gas:'IIC', temp:'T4', ip:'IP65',
+    power:'1W', channels:'2048', battery:'2300 mAh', batteryLife:'~20h',
+    weight:'430g', display:'Yes (colour TFT)', keypad:'Full',
     manDown:true, loneWorker:true, gps:true, bluetooth:true,
-    encryption:&#x27;TEA2/TEA3 + E2EE&#x27;, score:4, status:&#x27;production&#x27;, featured:false,
-    notation:&#x27;Ex ib IIC T4 Gb · II 2G&#x27;,
-    silhouette:&#x27;rugged&#x27;,
-    image:&#x27;images/moto-mtp8550ex.jpg&#x27;,
-    url:&#x27;https://www.motorolasolutions.com/products/tetra/tetra-radios/mtp8000ex-series.html&#x27;,
-    note:&#x27;The MTP8550Ex is Motorola\&#x27;s ATEX TETRA radio for mission-critical operations. Full keypad with colour TFT display, TEA2/TEA3 air-interface encryption plus optional end-to-end encryption. TETRA Enhanced Data Service (TEDS) for higher data throughput. Built-in GPS, Man Down, and Lone Worker. Used extensively in offshore oil &amp; gas, petrochemical, and utility operations on TETRA networks. IP65 rated (not submersible). Dual ATEX + IECEx certified.&#x27;
+    encryption:'TEA2/TEA3 + E2EE', score:4, status:'production', featured:false,
+    notation:'Ex ib IIC T4 Gb · II 2G',
+    silhouette:'rugged',
+    image:'images/moto-mtp8550ex.jpg',
+    url:'https://www.motorolasolutions.com/products/tetra/tetra-radios/mtp8000ex-series.html',
+    note:'The MTP8550Ex is Motorola\'s ATEX TETRA radio for mission-critical operations. Full keypad with colour TFT display, TEA2/TEA3 air-interface encryption plus optional end-to-end encryption. TETRA Enhanced Data Service (TEDS) for higher data throughput. Built-in GPS, Man Down, and Lone Worker. Used extensively in offshore oil & gas, petrochemical, and utility operations on TETRA networks. IP65 rated (not submersible). Dual ATEX + IECEx certified.'
   },
   {
-    id:&#x27;kenwood-nx230exe&#x27;, name:&#x27;Kenwood NX-230EXE&#x27;, vendor:&#x27;Kenwood (JVCKENWOOD)&#x27;,
-    type:&#x27;NXDN/Analogue Portable&#x27;, typeBadge:&#x27;badge-green&#x27;,
-    tech:&#x27;NXDN&#x27;, band:&#x27;VHF&#x27;, bands:[&#x27;VHF&#x27;],
-    zone:&#x27;Zone 1&#x27;, zones:[&#x27;zone1&#x27;,&#x27;zone2&#x27;],
-    atex:true, iecex:true, gas:&#x27;IIC&#x27;, temp:&#x27;T4&#x27;, ip:&#x27;IP67&#x27;,
-    power:&#x27;1W&#x27;, channels:&#x27;260&#x27;, battery:&#x27;2000 mAh (KNB-65LEX)&#x27;, batteryLife:&#x27;~14h&#x27;,
-    weight:&#x27;340g&#x27;, display:&#x27;Yes (LCD)&#x27;, keypad:&#x27;Full&#x27;,
+    id:'kenwood-nx230exe', name:'Kenwood NX-230EXE', vendor:'Kenwood (JVCKENWOOD)',
+    type:'NXDN/Analogue Portable', typeBadge:'badge-green',
+    tech:'NXDN', band:'VHF', bands:['VHF'],
+    zone:'Zone 1', zones:['zone1','zone2'],
+    atex:true, iecex:true, gas:'IIC', temp:'T4', ip:'IP67',
+    power:'1W', channels:'260', battery:'2000 mAh (KNB-65LEX)', batteryLife:'~14h',
+    weight:'340g', display:'Yes (LCD)', keypad:'Full',
     manDown:true, loneWorker:true, gps:true, bluetooth:false,
-    encryption:&#x27;DES&#x27;, score:4, status:&#x27;production&#x27;, featured:false,
-    notation:&#x27;Ex ib IIC T4 Gb · II 2G&#x27;,
-    silhouette:&#x27;rugged&#x27;,
-    image:&#x27;images/kenwood-nx230exe.jpg&#x27;,
-    url:&#x27;https://kenwood.eu/comm/atex&#x27;,
-    note:&#x27;The NX-230EXE is Kenwood\&#x27;s VHF ATEX radio using the NEXEDGE (NXDN) digital protocol. Mixed Mode operation allows phased migration from analogue to digital. MIL-STD-810 C/D/E/F/G compliant for shock, vibration, dust, and immersion. Built-in GPS and Lone Worker/Man Down. 260 channels with 128 zones. IP67 rated. Available with optional ATEX-certified leather carry solutions. Over 1.75 million NEXEDGE devices deployed globally. JVCKENWOOD is headquartered in Yokohama, Japan.&#x27;
+    encryption:'DES', score:4, status:'production', featured:false,
+    notation:'Ex ib IIC T4 Gb · II 2G',
+    silhouette:'rugged',
+    image:'images/kenwood-nx230exe.jpg',
+    url:'https://kenwood.eu/comm/atex',
+    note:'The NX-230EXE is Kenwood\'s VHF ATEX radio using the NEXEDGE (NXDN) digital protocol. Mixed Mode operation allows phased migration from analogue to digital. MIL-STD-810 C/D/E/F/G compliant for shock, vibration, dust, and immersion. Built-in GPS and Lone Worker/Man Down. 260 channels with 128 zones. IP67 rated. Available with optional ATEX-certified leather carry solutions. Over 1.75 million NEXEDGE devices deployed globally. JVCKENWOOD is headquartered in Yokohama, Japan.'
   },
   {
-    id:&#x27;kenwood-nx330exe&#x27;, name:&#x27;Kenwood NX-330EXE&#x27;, vendor:&#x27;Kenwood (JVCKENWOOD)&#x27;,
-    type:&#x27;NXDN/Analogue Portable&#x27;, typeBadge:&#x27;badge-green&#x27;,
-    tech:&#x27;NXDN&#x27;, band:&#x27;UHF&#x27;, bands:[&#x27;UHF&#x27;],
-    zone:&#x27;Zone 1&#x27;, zones:[&#x27;zone1&#x27;,&#x27;zone2&#x27;],
-    atex:true, iecex:true, gas:&#x27;IIC&#x27;, temp:&#x27;T4&#x27;, ip:&#x27;IP67&#x27;,
-    power:&#x27;1W&#x27;, channels:&#x27;260&#x27;, battery:&#x27;2000 mAh (KNB-65LEX)&#x27;, batteryLife:&#x27;~14h&#x27;,
-    weight:&#x27;340g&#x27;, display:&#x27;Yes (LCD)&#x27;, keypad:&#x27;Full&#x27;,
+    id:'kenwood-nx330exe', name:'Kenwood NX-330EXE', vendor:'Kenwood (JVCKENWOOD)',
+    type:'NXDN/Analogue Portable', typeBadge:'badge-green',
+    tech:'NXDN', band:'UHF', bands:['UHF'],
+    zone:'Zone 1', zones:['zone1','zone2'],
+    atex:true, iecex:true, gas:'IIC', temp:'T4', ip:'IP67',
+    power:'1W', channels:'260', battery:'2000 mAh (KNB-65LEX)', batteryLife:'~14h',
+    weight:'340g', display:'Yes (LCD)', keypad:'Full',
     manDown:true, loneWorker:true, gps:true, bluetooth:false,
-    encryption:&#x27;DES&#x27;, score:4, status:&#x27;production&#x27;, featured:false,
-    notation:&#x27;Ex ib IIC T4 Gb · II 2G&#x27;,
-    silhouette:&#x27;rugged&#x27;,
-    image:&#x27;images/kenwood-nx330exe.png&#x27;,
-    url:&#x27;https://kenwood.eu/comm/atex&#x27;,
-    note:&#x27;The NX-330EXE is the UHF variant of Kenwood\&#x27;s ATEX NEXEDGE line. Identical certification and features to the NX-230EXE but operates on UHF frequencies (400–470 MHz), offering better in-building penetration. Same MIL-STD-810 ruggedness, IP67 rating, GPS, and Man Down/Lone Worker safety features. Supports both NXDN digital and analogue modes for backwards compatibility with legacy fleet radios.&#x27;
+    encryption:'DES', score:4, status:'production', featured:false,
+    notation:'Ex ib IIC T4 Gb · II 2G',
+    silhouette:'rugged',
+    image:'images/kenwood-nx330exe.png',
+    url:'https://kenwood.eu/comm/atex',
+    note:'The NX-330EXE is the UHF variant of Kenwood\'s ATEX NEXEDGE line. Identical certification and features to the NX-230EXE but operates on UHF frequencies (400–470 MHz), offering better in-building penetration. Same MIL-STD-810 ruggedness, IP67 rating, GPS, and Man Down/Lone Worker safety features. Supports both NXDN digital and analogue modes for backwards compatibility with legacy fleet radios.'
   },
   {
-    id:&#x27;sepura-stp8x&#x27;, name:&#x27;Sepura STP8X000&#x27;, vendor:&#x27;Sepura&#x27;,
-    type:&#x27;TETRA Portable&#x27;, typeBadge:&#x27;badge-neutral&#x27;,
-    tech:&#x27;TETRA&#x27;, band:&#x27;UHF&#x27;, bands:[&#x27;UHF&#x27;],
-    zone:&#x27;Zone 1&#x27;, zones:[&#x27;zone1&#x27;,&#x27;zone2&#x27;],
-    atex:true, iecex:true, gas:&#x27;IIC&#x27;, temp:&#x27;T4&#x27;, ip:&#x27;IP67&#x27;,
-    power:&#x27;Class 4 (1.8W)&#x27;, channels:&#x27;2048&#x27;, battery:&#x27;1400 mAh&#x27;, batteryLife:&#x27;~15h&#x27;,
-    weight:&#x27;338g&#x27;, display:&#x27;Yes (colour TFT)&#x27;, keypad:&#x27;Full&#x27;,
+    id:'sepura-stp8x', name:'Sepura STP8X000', vendor:'Sepura',
+    type:'TETRA Portable', typeBadge:'badge-neutral',
+    tech:'TETRA', band:'UHF', bands:['UHF'],
+    zone:'Zone 1', zones:['zone1','zone2'],
+    atex:true, iecex:true, gas:'IIC', temp:'T4', ip:'IP67',
+    power:'Class 4 (1.8W)', channels:'2048', battery:'1400 mAh', batteryLife:'~15h',
+    weight:'338g', display:'Yes (colour TFT)', keypad:'Full',
     manDown:true, loneWorker:true, gps:true, bluetooth:true,
-    encryption:&#x27;TEA1–TEA3 + E2EE&#x27;, score:4, status:&#x27;production&#x27;, featured:false,
-    notation:&#x27;Ex ib IIC T4 Gb · II 2G&#x27;,
-    silhouette:&#x27;rugged&#x27;,
-    image:&#x27;images/sepura-stp8x.png&#x27;,
-    url:&#x27;https://sepura.com/devices/stp8x000-tetra-radio/&#x27;,
-    note:&#x27;The Sepura STP8X000 is the first IP67 submersible TETRA intrinsically safe radio. Built in Cambridge, UK. Full keypad with high-resolution colour TFT display. TEA1–TEA3 air-interface encryption with optional end-to-end encryption. Integrated GPS with Man Down motion and tilt monitoring. Compatible with Sepura Radio Manager for fleet programming. ATEX and IECEx Zone 1 IIC T4 certified. Frequency bands: 380–430 MHz and 407–473 MHz. Operating temperature: -20°C to +55°C. Dust certified Zone 21 (IIIC T90°C Db) and mining rated (I M2 Ex ib I Mb). Note: Sepura is now part of the Hytera group but remains a UK-headquartered operation with independent product development.&#x27;
+    encryption:'TEA1–TEA3 + E2EE', score:4, status:'production', featured:false,
+    notation:'Ex ib IIC T4 Gb · II 2G',
+    silhouette:'rugged',
+    image:'images/sepura-stp8x.png',
+    url:'https://sepura.com/devices/stp8x000-tetra-radio/',
+    note:'The Sepura STP8X000 is the first IP67 submersible TETRA intrinsically safe radio. Built in Cambridge, UK. Full keypad with high-resolution colour TFT display. TEA1–TEA3 air-interface encryption with optional end-to-end encryption. Integrated GPS with Man Down motion and tilt monitoring. Compatible with Sepura Radio Manager for fleet programming. ATEX and IECEx Zone 1 IIC T4 certified. Frequency bands: 380–430 MHz and 407–473 MHz. Operating temperature: -20°C to +55°C. Dust certified Zone 21 (IIIC T90°C Db) and mining rated (I M2 Ex ib I Mb). Note: Sepura is now part of the Hytera group but remains a UK-headquartered operation with independent product development.'
   },
   {
-    id:&#x27;isafe-is440&#x27;, name:&#x27;i.safe MOBILE IS440.1&#x27;, vendor:&#x27;i.safe MOBILE&#x27;,
-    type:&#x27;PoC Radio (4G/LTE)&#x27;, typeBadge:&#x27;badge-warn&#x27;,
-    tech:&#x27;PoC&#x27;, band:&#x27;LTE&#x27;, bands:[&#x27;VHF&#x27;,&#x27;UHF&#x27;],
-    zone:&#x27;Zone 1&#x27;, zones:[&#x27;zone1&#x27;,&#x27;zone2&#x27;],
-    atex:true, iecex:true, gas:&#x27;IIC&#x27;, temp:&#x27;T4&#x27;, ip:&#x27;IP68&#x27;,
-    power:&#x27;N/A (cellular)&#x27;, channels:&#x27;Unlimited (app)&#x27;, battery:&#x27;4400 mAh&#x27;, batteryLife:&#x27;~24h&#x27;,
-    weight:&#x27;350g&#x27;, display:&#x27;Yes (2.4&quot; colour)&#x27;, keypad:&#x27;Full&#x27;,
+    id:'isafe-is440', name:'i.safe MOBILE IS440.1', vendor:'i.safe MOBILE',
+    type:'PoC Radio (4G/LTE)', typeBadge:'badge-warn',
+    tech:'PoC', band:'LTE', bands:['VHF','UHF'],
+    zone:'Zone 1', zones:['zone1','zone2'],
+    atex:true, iecex:true, gas:'IIC', temp:'T4', ip:'IP68',
+    power:'N/A (cellular)', channels:'Unlimited (app)', battery:'4400 mAh', batteryLife:'~24h',
+    weight:'350g', display:'Yes (2.4" colour)', keypad:'Full',
     manDown:true, loneWorker:true, gps:true, bluetooth:true,
-    encryption:&#x27;TLS + app-layer&#x27;, score:3, status:&#x27;production&#x27;, featured:false,
-    notation:&#x27;Ex ib IIC T4 Gb · II 2G&#x27;,
-    silhouette:&#x27;rugged&#x27;,
-    image:&#x27;images/isafe-is440.png&#x27;,
-    url:&#x27;https://www.isafe-mobile.com/en/products/product-range/zone-1/21/is4401&#x27;,
-    note:&#x27;The i.safe MOBILE IS440.1 is a Zone 1 certified Push-to-Talk over Cellular (PoC) radio. Unlike traditional DMR/TETRA radios, it uses 4G/LTE networks for communication — no dedicated radio infrastructure required. 2.4-inch colour display, dedicated PTT button, 4400 mAh battery. Supports Wi-Fi, Bluetooth 5.0, and NFC. Compatible with multiple PoC platforms including Zello, ESChat, and TASSTA. German-engineered by i.safe MOBILE (Lauda-Königshofen, Germany). ATEX + IECEx + 7 additional scheme certifications. Best suited for organisations wanting PTT functionality without investing in repeater/base station infrastructure.&#x27;
+    encryption:'TLS + app-layer', score:3, status:'production', featured:false,
+    notation:'Ex ib IIC T4 Gb · II 2G',
+    silhouette:'rugged',
+    image:'images/isafe-is440.png',
+    url:'https://www.isafe-mobile.com/en/products/product-range/zone-1/21/is4401',
+    note:'The i.safe MOBILE IS440.1 is a Zone 1 certified Push-to-Talk over Cellular (PoC) radio. Unlike traditional DMR/TETRA radios, it uses 4G/LTE networks for communication — no dedicated radio infrastructure required. 2.4-inch colour display, dedicated PTT button, 4400 mAh battery. Supports Wi-Fi, Bluetooth 5.0, and NFC. Compatible with multiple PoC platforms including Zello, ESChat, and TASSTA. German-engineered by i.safe MOBILE (Lauda-Königshofen, Germany). ATEX + IECEx + 7 additional scheme certifications. Best suited for organisations wanting PTT functionality without investing in repeater/base station infrastructure.'
   }
 ];
 
-const grid = document.getElementById(&#x27;cardGrid&#x27;);
+const grid = document.getElementById('cardGrid');
 
 function score5(n){
-  let s=&#x27;&#x27;;for(let i=0;i&lt;5;i++){s+=`&lt;span class=&quot;score-seg ${i&lt;n?&#x27;on&#x27;:&#x27;&#x27;}&quot;&gt;&lt;/span&gt;`;}return`&lt;span class=&quot;score-track&quot;&gt;${s}&lt;/span&gt;`;
+  let s='';for(let i=0;i&lt;5;i++){s+=`&lt;span class="score-seg ${i&lt;n?'on':''}"&gt;&lt;/span&gt;`;}return`&lt;span class="score-track"&gt;${s}&lt;/span&gt;`;
 }
 function yn(v){
-  if(v===true||v===&#x27;Yes&#x27;) return `&lt;span class=&quot;badge badge-green&quot;&gt;&lt;span class=&quot;hb !w-[6px] !h-[6px]&quot;&gt;&lt;/span&gt;Yes&lt;/span&gt;`;
-  if(v===false||v===&#x27;No&#x27;) return `&lt;span class=&quot;badge badge-stone&quot;&gt;No&lt;/span&gt;`;
-  return `&lt;span class=&quot;chip&quot;&gt;\u2014&lt;/span&gt;`;
+  if(v===true||v==='Yes') return `&lt;span class="badge badge-green"&gt;&lt;span class="hb !w-[6px] !h-[6px]"&gt;&lt;/span&gt;Yes&lt;/span&gt;`;
+  if(v===false||v==='No') return `&lt;span class="badge badge-stone"&gt;No&lt;/span&gt;`;
+  return `&lt;span class="chip"&gt;\u2014&lt;/span&gt;`;
 }
 function certMark(s){
   const list=[];
-  list.push(s.atex?`&lt;span class=&quot;chip&quot;&gt;ATEX&lt;/span&gt;`:`&lt;span class=&quot;chip&quot; style=&quot;opacity:.4;text-decoration:line-through&quot;&gt;ATEX&lt;/span&gt;`);
-  list.push(s.iecex?`&lt;span class=&quot;chip&quot;&gt;IECEx&lt;/span&gt;`:`&lt;span class=&quot;chip&quot; style=&quot;opacity:.4;text-decoration:line-through&quot;&gt;IECEx&lt;/span&gt;`);
-  return list.join(&#x27; &#x27;);
+  list.push(s.atex?`&lt;span class="chip"&gt;ATEX&lt;/span&gt;`:`&lt;span class="chip" style="opacity:.4;text-decoration:line-through"&gt;ATEX&lt;/span&gt;`);
+  list.push(s.iecex?`&lt;span class="chip"&gt;IECEx&lt;/span&gt;`:`&lt;span class="chip" style="opacity:.4;text-decoration:line-through"&gt;IECEx&lt;/span&gt;`);
+  return list.join(' ');
 }
 
 function renderCards(){
   grid.innerHTML = SOLUTIONS.map(s=&gt;`
-    &lt;article class=&quot;card overflow-visible relative ${s.featured?&#x27;xl:col-span-2 !border-[color:var(--ink)]&#x27;:&#x27;&#x27;}&quot;
-             data-id=&quot;${s.id}&quot;
-             data-zones=&quot;${s.zones.join(&#x27;,&#x27;)}&quot;
-             data-atex=&quot;${s.atex}&quot; data-iecex=&quot;${s.iecex}&quot;
-             data-tech=&quot;${s.tech}&quot;
-             data-band=&quot;${s.band}&quot;
-             data-status=&quot;${s.status}&quot;&gt;
-      ${s.featured?`&lt;span class=&quot;ribbon&quot;&gt;&lt;span class=&quot;dot&quot;&gt;&lt;/span&gt;Popular · Zone 1 DMR&lt;/span&gt;`:&#x27;&#x27;}
+    &lt;article class="card overflow-visible relative ${s.featured?'xl:col-span-2 !border-[color:var(--ink)]':''}"
+             data-id="${s.id}"
+             data-zones="${s.zones.join(',')}"
+             data-atex="${s.atex}" data-iecex="${s.iecex}"
+             data-tech="${s.tech}"
+             data-band="${s.band}"
+             data-status="${s.status}"&gt;
+      ${s.featured?`&lt;span class="ribbon"&gt;&lt;span class="dot"&gt;&lt;/span&gt;Popular · Zone 1 DMR&lt;/span&gt;`:''}
 
-      &lt;div class=&quot;px-7 pt-7 pb-0&quot;&gt;
-        &lt;div class=&quot;device-shot&quot;&gt;
-          ${s.image ? `&lt;img src=&quot;${s.image}&quot; alt=&quot;${s.name}&quot; loading=&quot;lazy&quot; /&gt;` : `&lt;div class=&quot;dev-silhouette rugged&quot;&gt;&lt;/div&gt;`}
-          &lt;span class=&quot;ph-label&quot;&gt;${s.vendor} · ${s.tech}&lt;/span&gt;
+      &lt;div class="px-7 pt-7 pb-0"&gt;
+        &lt;div class="device-shot"&gt;
+          ${s.image ? `&lt;img src="${s.image}" alt="${s.name}" loading="lazy" /&gt;` : `&lt;div class="dev-silhouette rugged"&gt;&lt;/div&gt;`}
+          &lt;span class="ph-label"&gt;${s.vendor} · ${s.tech}&lt;/span&gt;
         &lt;/div&gt;
       &lt;/div&gt;
 
-      &lt;div class=&quot;p-7 pt-5 pb-5 flex items-start gap-4&quot;&gt;
-        &lt;label class=&quot;pt-1.5&quot; onclick=&quot;event.stopPropagation()&quot;&gt;
-          &lt;input type=&quot;checkbox&quot; class=&quot;cb cmp-cb&quot; data-id=&quot;${s.id}&quot; aria-label=&quot;Add to compare&quot;/&gt;
+      &lt;div class="p-7 pt-5 pb-5 flex items-start gap-4"&gt;
+        &lt;label class="pt-1.5" onclick="event.stopPropagation()"&gt;
+          &lt;input type="checkbox" class="cb cmp-cb" data-id="${s.id}" aria-label="Add to compare"/&gt;
         &lt;/label&gt;
-        &lt;div class=&quot;flex-1 min-w-0&quot;&gt;
-          &lt;div class=&quot;flex items-center gap-2 mb-2 flex-wrap&quot;&gt;
-            &lt;span class=&quot;badge ${s.typeBadge}&quot;&gt;${s.type}&lt;/span&gt;
-            &lt;span class=&quot;badge badge-stone&quot;&gt;${s.zone}&lt;/span&gt;
+        &lt;div class="flex-1 min-w-0"&gt;
+          &lt;div class="flex items-center gap-2 mb-2 flex-wrap"&gt;
+            &lt;span class="badge ${s.typeBadge}"&gt;${s.type}&lt;/span&gt;
+            &lt;span class="badge badge-stone"&gt;${s.zone}&lt;/span&gt;
           &lt;/div&gt;
-          &lt;h3 class=&quot;serif h-card leading-tight&quot;&gt;${s.name}&lt;/h3&gt;
-          &lt;div class=&quot;text-[13px] text-[color:var(--ash)] mt-1.5&quot;&gt;&lt;a href=&quot;${s.url||&#x27;#&#x27;}&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; class=&quot;hover:text-[color:var(--ink)] border-b border-[color:var(--border)]&quot;&gt;${s.vendor}&lt;/a&gt; &lt;span class=&quot;dash-dot&quot;&gt;&lt;/span&gt; ${s.tech} · ${s.band}&lt;/div&gt;
+          &lt;h3 class="serif h-card leading-tight"&gt;${s.name}&lt;/h3&gt;
+          &lt;div class="text-[13px] text-[color:var(--ash)] mt-1.5"&gt;&lt;a href="${s.url||'#'}" target="_blank" rel="noopener" class="hover:text-[color:var(--ink)] border-b border-[color:var(--border)]"&gt;${s.vendor}&lt;/a&gt; &lt;span class="dash-dot"&gt;&lt;/span&gt; ${s.tech} · ${s.band}&lt;/div&gt;
         &lt;/div&gt;
-        &lt;div class=&quot;text-right shrink-0&quot;&gt;
-          &lt;div class=&quot;text-[11px] text-[color:var(--ash)] mb-1.5&quot;&gt;Score&lt;/div&gt;
+        &lt;div class="text-right shrink-0"&gt;
+          &lt;div class="text-[11px] text-[color:var(--ash)] mb-1.5"&gt;Score&lt;/div&gt;
           ${score5(s.score)}
         &lt;/div&gt;
       &lt;/div&gt;
 
-      &lt;div class=&quot;px-7&quot;&gt;&lt;div class=&quot;h-px bg-[color:var(--border)]&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+      &lt;div class="px-7"&gt;&lt;div class="h-px bg-[color:var(--border)]"&gt;&lt;/div&gt;&lt;/div&gt;
 
-      &lt;div class=&quot;px-7 py-4 ${s.featured?&#x27;grid grid-cols-1 md:grid-cols-2 gap-x-10&#x27;:&#x27;&#x27;}&quot;&gt;
+      &lt;div class="px-7 py-4 ${s.featured?'grid grid-cols-1 md:grid-cols-2 gap-x-10':''}"&gt;
         &lt;div&gt;
-          &lt;div class=&quot;spec&quot;&gt;&lt;span class=&quot;spec-label&quot;&gt;Certification&lt;/span&gt;&lt;span class=&quot;spec-val flex gap-1.5 justify-end flex-wrap&quot;&gt;${certMark(s)}&lt;/span&gt;&lt;/div&gt;
-          &lt;div class=&quot;spec&quot;&gt;&lt;span class=&quot;spec-label&quot;&gt;Gas group&lt;/span&gt;&lt;span class=&quot;spec-val&quot;&gt;${s.gas}&lt;/span&gt;&lt;/div&gt;
-          &lt;div class=&quot;spec&quot;&gt;&lt;span class=&quot;spec-label&quot;&gt;Temp class&lt;/span&gt;&lt;span class=&quot;spec-val&quot;&gt;${s.temp}&lt;/span&gt;&lt;/div&gt;
-          &lt;div class=&quot;spec&quot;&gt;&lt;span class=&quot;spec-label&quot;&gt;IP rating&lt;/span&gt;&lt;span class=&quot;spec-val&quot;&gt;${s.ip}&lt;/span&gt;&lt;/div&gt;
+          &lt;div class="spec"&gt;&lt;span class="spec-label"&gt;Certification&lt;/span&gt;&lt;span class="spec-val flex gap-1.5 justify-end flex-wrap"&gt;${certMark(s)}&lt;/span&gt;&lt;/div&gt;
+          &lt;div class="spec"&gt;&lt;span class="spec-label"&gt;Gas group&lt;/span&gt;&lt;span class="spec-val"&gt;${s.gas}&lt;/span&gt;&lt;/div&gt;
+          &lt;div class="spec"&gt;&lt;span class="spec-label"&gt;Temp class&lt;/span&gt;&lt;span class="spec-val"&gt;${s.temp}&lt;/span&gt;&lt;/div&gt;
+          &lt;div class="spec"&gt;&lt;span class="spec-label"&gt;IP rating&lt;/span&gt;&lt;span class="spec-val"&gt;${s.ip}&lt;/span&gt;&lt;/div&gt;
         &lt;/div&gt;
         &lt;div&gt;
-          &lt;div class=&quot;spec&quot;&gt;&lt;span class=&quot;spec-label&quot;&gt;TX power&lt;/span&gt;&lt;span class=&quot;spec-val&quot;&gt;${s.power}&lt;/span&gt;&lt;/div&gt;
-          &lt;div class=&quot;spec&quot;&gt;&lt;span class=&quot;spec-label&quot;&gt;Channels&lt;/span&gt;&lt;span class=&quot;spec-val&quot;&gt;${s.channels}&lt;/span&gt;&lt;/div&gt;
-          &lt;div class=&quot;spec&quot;&gt;&lt;span class=&quot;spec-label&quot;&gt;Battery&lt;/span&gt;&lt;span class=&quot;spec-val&quot;&gt;${s.battery}&lt;/span&gt;&lt;/div&gt;
-          &lt;div class=&quot;spec&quot;&gt;&lt;span class=&quot;spec-label&quot;&gt;Weight&lt;/span&gt;&lt;span class=&quot;spec-val&quot;&gt;${s.weight}&lt;/span&gt;&lt;/div&gt;
+          &lt;div class="spec"&gt;&lt;span class="spec-label"&gt;TX power&lt;/span&gt;&lt;span class="spec-val"&gt;${s.power}&lt;/span&gt;&lt;/div&gt;
+          &lt;div class="spec"&gt;&lt;span class="spec-label"&gt;Channels&lt;/span&gt;&lt;span class="spec-val"&gt;${s.channels}&lt;/span&gt;&lt;/div&gt;
+          &lt;div class="spec"&gt;&lt;span class="spec-label"&gt;Battery&lt;/span&gt;&lt;span class="spec-val"&gt;${s.battery}&lt;/span&gt;&lt;/div&gt;
+          &lt;div class="spec"&gt;&lt;span class="spec-label"&gt;Weight&lt;/span&gt;&lt;span class="spec-val"&gt;${s.weight}&lt;/span&gt;&lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
 
-      &lt;div class=&quot;px-7&quot;&gt;&lt;div class=&quot;h-px bg-[color:var(--border)]&quot;&gt;&lt;/div&gt;&lt;/div&gt;
-      &lt;div class=&quot;px-7 py-4&quot;&gt;
-        &lt;div class=&quot;mono text-[11px] text-[color:var(--ash)] uppercase tracking-wider mb-2&quot;&gt;Safety &amp;amp; Features&lt;/div&gt;
+      &lt;div class="px-7"&gt;&lt;div class="h-px bg-[color:var(--border)]"&gt;&lt;/div&gt;&lt;/div&gt;
+      &lt;div class="px-7 py-4"&gt;
+        &lt;div class="mono text-[11px] text-[color:var(--ash)] uppercase tracking-wider mb-2"&gt;Safety &amp; Features&lt;/div&gt;
         &lt;div&gt;
-          &lt;div class=&quot;spec&quot;&gt;&lt;span class=&quot;spec-label&quot;&gt;Man Down&lt;/span&gt;&lt;span class=&quot;spec-val&quot;&gt;${yn(s.manDown)}&lt;/span&gt;&lt;/div&gt;
-          &lt;div class=&quot;spec&quot;&gt;&lt;span class=&quot;spec-label&quot;&gt;Lone Worker&lt;/span&gt;&lt;span class=&quot;spec-val&quot;&gt;${yn(s.loneWorker)}&lt;/span&gt;&lt;/div&gt;
-          &lt;div class=&quot;spec&quot;&gt;&lt;span class=&quot;spec-label&quot;&gt;GPS&lt;/span&gt;&lt;span class=&quot;spec-val&quot;&gt;${yn(s.gps)}&lt;/span&gt;&lt;/div&gt;
-          &lt;div class=&quot;spec&quot;&gt;&lt;span class=&quot;spec-label&quot;&gt;Bluetooth&lt;/span&gt;&lt;span class=&quot;spec-val&quot;&gt;${yn(s.bluetooth)}&lt;/span&gt;&lt;/div&gt;
-          &lt;div class=&quot;spec&quot;&gt;&lt;span class=&quot;spec-label&quot;&gt;Encryption&lt;/span&gt;&lt;span class=&quot;spec-val text-[12px]&quot;&gt;${s.encryption}&lt;/span&gt;&lt;/div&gt;
-          &lt;div class=&quot;spec&quot;&gt;&lt;span class=&quot;spec-label&quot;&gt;Display&lt;/span&gt;&lt;span class=&quot;spec-val text-[12px]&quot;&gt;${s.display}&lt;/span&gt;&lt;/div&gt;
-          &lt;div class=&quot;spec&quot;&gt;&lt;span class=&quot;spec-label&quot;&gt;Ex notation&lt;/span&gt;&lt;span class=&quot;spec-val&quot;&gt;${s.notation}&lt;/span&gt;&lt;/div&gt;
+          &lt;div class="spec"&gt;&lt;span class="spec-label"&gt;Man Down&lt;/span&gt;&lt;span class="spec-val"&gt;${yn(s.manDown)}&lt;/span&gt;&lt;/div&gt;
+          &lt;div class="spec"&gt;&lt;span class="spec-label"&gt;Lone Worker&lt;/span&gt;&lt;span class="spec-val"&gt;${yn(s.loneWorker)}&lt;/span&gt;&lt;/div&gt;
+          &lt;div class="spec"&gt;&lt;span class="spec-label"&gt;GPS&lt;/span&gt;&lt;span class="spec-val"&gt;${yn(s.gps)}&lt;/span&gt;&lt;/div&gt;
+          &lt;div class="spec"&gt;&lt;span class="spec-label"&gt;Bluetooth&lt;/span&gt;&lt;span class="spec-val"&gt;${yn(s.bluetooth)}&lt;/span&gt;&lt;/div&gt;
+          &lt;div class="spec"&gt;&lt;span class="spec-label"&gt;Encryption&lt;/span&gt;&lt;span class="spec-val text-[12px]"&gt;${s.encryption}&lt;/span&gt;&lt;/div&gt;
+          &lt;div class="spec"&gt;&lt;span class="spec-label"&gt;Display&lt;/span&gt;&lt;span class="spec-val text-[12px]"&gt;${s.display}&lt;/span&gt;&lt;/div&gt;
+          &lt;div class="spec"&gt;&lt;span class="spec-label"&gt;Ex notation&lt;/span&gt;&lt;span class="spec-val"&gt;${s.notation}&lt;/span&gt;&lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
 
-      &lt;div class=&quot;card-expand px-7 pb-6&quot;&gt;
-        &lt;div class=&quot;h-px bg-[color:var(--border)] mb-5&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;mono text-[11px] text-[color:var(--ash)] uppercase tracking-wider mb-2&quot;&gt;Deployment note&lt;/div&gt;
-        &lt;p class=&quot;text-[14.5px] leading-[1.6] text-[color:var(--graphite)]&quot;&gt;${s.note}&lt;/p&gt;
-        &lt;div class=&quot;mt-4 flex flex-wrap items-center gap-2&quot;&gt;
-          &lt;span class=&quot;chip-dark chip&quot;&gt;${s.notation}&lt;/span&gt;
-          ${s.zones.map(z=&gt;`&lt;span class=&quot;chip&quot;&gt;${z.replace(&#x27;zone&#x27;,&#x27;Zone &#x27;)}&lt;/span&gt;`).join(&#x27;&#x27;)}
-          &lt;span class=&quot;chip&quot;&gt;${s.ip}&lt;/span&gt;
-          &lt;span class=&quot;chip&quot;&gt;${s.tech}&lt;/span&gt;
+      &lt;div class="card-expand px-7 pb-6"&gt;
+        &lt;div class="h-px bg-[color:var(--border)] mb-5"&gt;&lt;/div&gt;
+        &lt;div class="mono text-[11px] text-[color:var(--ash)] uppercase tracking-wider mb-2"&gt;Deployment note&lt;/div&gt;
+        &lt;p class="text-[14.5px] leading-[1.6] text-[color:var(--graphite)]"&gt;${s.note}&lt;/p&gt;
+        &lt;div class="mt-4 flex flex-wrap items-center gap-2"&gt;
+          &lt;span class="chip-dark chip"&gt;${s.notation}&lt;/span&gt;
+          ${s.zones.map(z=&gt;`&lt;span class="chip"&gt;${z.replace('zone','Zone ')}&lt;/span&gt;`).join('')}
+          &lt;span class="chip"&gt;${s.ip}&lt;/span&gt;
+          &lt;span class="chip"&gt;${s.tech}&lt;/span&gt;
         &lt;/div&gt;
       &lt;/div&gt;
 
-      &lt;button class=&quot;card-toggle w-full px-7 py-3.5 border-t border-[color:var(--border)] flex items-center justify-between text-left hover:bg-[color:var(--bg-alt)] transition&quot;&gt;
-        &lt;span class=&quot;text-[13px] text-[color:var(--graphite)]&quot;&gt;Expand spec &amp;amp; deployment note&lt;/span&gt;
-        &lt;svg class=&quot;chev&quot; width=&quot;14&quot; height=&quot;14&quot; viewBox=&quot;0 0 24 24&quot;&gt;&lt;path d=&quot;M6 9l6 6 6-6&quot; stroke=&quot;#888880&quot; stroke-width=&quot;1.6&quot; fill=&quot;none&quot;/&gt;&lt;/svg&gt;
+      &lt;button class="card-toggle w-full px-7 py-3.5 border-t border-[color:var(--border)] flex items-center justify-between text-left hover:bg-[color:var(--bg-alt)] transition"&gt;
+        &lt;span class="text-[13px] text-[color:var(--graphite)]"&gt;Expand spec &amp; deployment note&lt;/span&gt;
+        &lt;svg class="chev" width="14" height="14" viewBox="0 0 24 24"&gt;&lt;path d="M6 9l6 6 6-6" stroke="#888880" stroke-width="1.6" fill="none"/&gt;&lt;/svg&gt;
       &lt;/button&gt;
-    &lt;/article&gt;`).join(&#x27;&#x27;);
+    &lt;/article&gt;`).join('');
 
-  document.querySelectorAll(&#x27;.card-toggle&#x27;).forEach(b=&gt;{
-    b.addEventListener(&#x27;click&#x27;,e=&gt;e.currentTarget.closest(&#x27;.card&#x27;).classList.toggle(&#x27;open&#x27;));
+  document.querySelectorAll('.card-toggle').forEach(b=&gt;{
+    b.addEventListener('click',e=&gt;e.currentTarget.closest('.card').classList.toggle('open'));
   });
-  document.querySelectorAll(&#x27;.cmp-cb&#x27;).forEach(cb=&gt;cb.addEventListener(&#x27;change&#x27;,onCompareChange));
+  document.querySelectorAll('.cmp-cb').forEach(cb=&gt;cb.addEventListener('change',onCompareChange));
 }
 renderCards();
 
 // Filtering
 const filters={zone:new Set(),cert:new Set(),tech:new Set(),band:new Set()};
-document.querySelectorAll(&#x27;#filterBar .pill&#x27;).forEach(btn=&gt;{
-  btn.addEventListener(&#x27;click&#x27;,()=&gt;{
+document.querySelectorAll('#filterBar .pill').forEach(btn=&gt;{
+  btn.addEventListener('click',()=&gt;{
     const k=btn.dataset.filter,v=btn.dataset.val;
-    const pressed=btn.getAttribute(&#x27;aria-pressed&#x27;)===&#x27;true&#x27;;
-    btn.setAttribute(&#x27;aria-pressed&#x27;,String(!pressed));
+    const pressed=btn.getAttribute('aria-pressed')==='true';
+    btn.setAttribute('aria-pressed',String(!pressed));
     if(pressed) filters[k].delete(v); else filters[k].add(v);
     applyFilters();
   });
 });
-document.getElementById(&#x27;clearFilters&#x27;).addEventListener(&#x27;click&#x27;,()=&gt;{
+document.getElementById('clearFilters').addEventListener('click',()=&gt;{
   Object.values(filters).forEach(s=&gt;s.clear());
-  document.querySelectorAll(&#x27;#filterBar .pill&#x27;).forEach(b=&gt;b.setAttribute(&#x27;aria-pressed&#x27;,&#x27;false&#x27;));
+  document.querySelectorAll('#filterBar .pill').forEach(b=&gt;b.setAttribute('aria-pressed','false'));
   applyFilters();
 });
 function applyFilters(){
   let n=0;
-  document.querySelectorAll(&#x27;#cardGrid .card&#x27;).forEach(card=&gt;{
-    const zones=card.dataset.zones.split(&#x27;,&#x27;);
-    const atex=card.dataset.atex===&#x27;true&#x27;,iecex=card.dataset.iecex===&#x27;true&#x27;;
+  document.querySelectorAll('#cardGrid .card').forEach(card=&gt;{
+    const zones=card.dataset.zones.split(',');
+    const atex=card.dataset.atex==='true',iecex=card.dataset.iecex==='true';
     const tech=card.dataset.tech,band=card.dataset.band;
     let pass=true;
-    if(filters.zone.size) pass=pass&amp;&amp;[...filters.zone].some(z=&gt;zones.includes(z));
-    if(filters.cert.size) pass=pass&amp;&amp;(filters.cert.has(&#x27;atex&#x27;)?atex:true)&amp;&amp;(filters.cert.has(&#x27;iecex&#x27;)?iecex:true);
-    if(filters.tech.size) pass=pass&amp;&amp;filters.tech.has(tech);
-    if(filters.band.size) pass=pass&amp;&amp;filters.band.has(band);
-    card.style.display=pass?&#x27;&#x27;:&#x27;none&#x27;;
+    if(filters.zone.size) pass=pass&&[...filters.zone].some(z=&gt;zones.includes(z));
+    if(filters.cert.size) pass=pass&&(filters.cert.has('atex')?atex:true)&&(filters.cert.has('iecex')?iecex:true);
+    if(filters.tech.size) pass=pass&&filters.tech.has(tech);
+    if(filters.band.size) pass=pass&&filters.band.has(band);
+    card.style.display=pass?'':'none';
     if(pass) n++;
   });
-  document.getElementById(&#x27;resultCount&#x27;).textContent=n;
+  document.getElementById('resultCount').textContent=n;
 }
 
 // Compare
 const compareSet=new Set();
-const compareBar=document.getElementById(&#x27;compareBar&#x27;);
-const cmpN=document.getElementById(&#x27;cmpN&#x27;);
-const compareCount=document.getElementById(&#x27;compareCount&#x27;);
-const cmpTable=document.getElementById(&#x27;cmpTable&#x27;);
+const compareBar=document.getElementById('compareBar');
+const cmpN=document.getElementById('cmpN');
+const compareCount=document.getElementById('compareCount');
+const cmpTable=document.getElementById('cmpTable');
 
 function onCompareChange(e){
   const id=e.target.dataset.id;
@@ -986,51 +989,51 @@ function onCompareChange(e){
 function refreshCompare(){
   cmpN.textContent=compareSet.size;
   compareCount.textContent=compareSet.size;
-  if(compareSet.size&gt;0) compareBar.classList.add(&#x27;show&#x27;); else compareBar.classList.remove(&#x27;show&#x27;);
+  if(compareSet.size&gt;0) compareBar.classList.add('show'); else compareBar.classList.remove('show');
   const sels=SOLUTIONS.filter(s=&gt;compareSet.has(s.id));
-  if(!sels.length){cmpTable.innerHTML=&#x27;&#x27;;return;}
+  if(!sels.length){cmpTable.innerHTML='';return;}
   const rows=[
-    [&#x27;Type&#x27;,s=&gt;s.type],[&#x27;Technology&#x27;,s=&gt;s.tech],[&#x27;Band&#x27;,s=&gt;s.band],[&#x27;Zone&#x27;,s=&gt;s.zone],
-    [&#x27;ATEX&#x27;,s=&gt;s.atex?&#x27;Yes&#x27;:&#x27;No&#x27;],[&#x27;IECEx&#x27;,s=&gt;s.iecex?&#x27;Yes&#x27;:&#x27;No&#x27;],
-    [&#x27;Gas group&#x27;,s=&gt;s.gas],[&#x27;Temp class&#x27;,s=&gt;s.temp],[&#x27;IP rating&#x27;,s=&gt;s.ip],
-    [&#x27;TX power&#x27;,s=&gt;s.power],[&#x27;Channels&#x27;,s=&gt;s.channels],
-    [&#x27;Battery&#x27;,s=&gt;s.battery],[&#x27;Battery life&#x27;,s=&gt;s.batteryLife],[&#x27;Weight&#x27;,s=&gt;s.weight],
-    [&#x27;Man Down&#x27;,s=&gt;s.manDown?&#x27;Yes&#x27;:&#x27;No&#x27;],[&#x27;GPS&#x27;,s=&gt;s.gps?&#x27;Yes&#x27;:&#x27;No&#x27;],
-    [&#x27;Bluetooth&#x27;,s=&gt;s.bluetooth?&#x27;Yes&#x27;:&#x27;No&#x27;],[&#x27;Encryption&#x27;,s=&gt;s.encryption],
-    [&#x27;Display&#x27;,s=&gt;s.display],[&#x27;Ex notation&#x27;,s=&gt;s.notation],[&#x27;Score&#x27;,s=&gt;`${s.score}/5`]
+    ['Type',s=&gt;s.type],['Technology',s=&gt;s.tech],['Band',s=&gt;s.band],['Zone',s=&gt;s.zone],
+    ['ATEX',s=&gt;s.atex?'Yes':'No'],['IECEx',s=&gt;s.iecex?'Yes':'No'],
+    ['Gas group',s=&gt;s.gas],['Temp class',s=&gt;s.temp],['IP rating',s=&gt;s.ip],
+    ['TX power',s=&gt;s.power],['Channels',s=&gt;s.channels],
+    ['Battery',s=&gt;s.battery],['Battery life',s=&gt;s.batteryLife],['Weight',s=&gt;s.weight],
+    ['Man Down',s=&gt;s.manDown?'Yes':'No'],['GPS',s=&gt;s.gps?'Yes':'No'],
+    ['Bluetooth',s=&gt;s.bluetooth?'Yes':'No'],['Encryption',s=&gt;s.encryption],
+    ['Display',s=&gt;s.display],['Ex notation',s=&gt;s.notation],['Score',s=&gt;`${s.score}/5`]
   ];
   cmpTable.innerHTML=`&lt;thead&gt;&lt;tr&gt;
-    &lt;th class=&quot;!w-[22%]&quot;&gt;Spec&lt;/th&gt;
-    ${sels.map(s=&gt;`&lt;th class=&quot;!text-[color:var(--ink)] !normal-case !text-[13px]&quot;&gt;&lt;div class=&quot;serif text-[17px] leading-tight&quot;&gt;${s.name}&lt;/div&gt;&lt;div class=&quot;mono text-[11px] text-[color:var(--ash)] mt-1&quot;&gt;${s.vendor}&lt;/div&gt;&lt;/th&gt;`).join(&#x27;&#x27;)}
+    &lt;th class="!w-[22%]"&gt;Spec&lt;/th&gt;
+    ${sels.map(s=&gt;`&lt;th class="!text-[color:var(--ink)] !normal-case !text-[13px]"&gt;&lt;div class="serif text-[17px] leading-tight"&gt;${s.name}&lt;/div&gt;&lt;div class="mono text-[11px] text-[color:var(--ash)] mt-1"&gt;${s.vendor}&lt;/div&gt;&lt;/th&gt;`).join('')}
   &lt;/tr&gt;&lt;/thead&gt;
-  &lt;tbody&gt;${rows.map(([l,fn])=&gt;`&lt;tr&gt;&lt;td class=&quot;text-[color:var(--ash)]&quot;&gt;${l}&lt;/td&gt;${sels.map(s=&gt;`&lt;td class=&quot;mono&quot;&gt;${fn(s)}&lt;/td&gt;`).join(&#x27;&#x27;)}&lt;/tr&gt;`).join(&#x27;&#x27;)}&lt;/tbody&gt;`;
+  &lt;tbody&gt;${rows.map(([l,fn])=&gt;`&lt;tr&gt;&lt;td class="text-[color:var(--ash)]"&gt;${l}&lt;/td&gt;${sels.map(s=&gt;`&lt;td class="mono"&gt;${fn(s)}&lt;/td&gt;`).join('')}&lt;/tr&gt;`).join('')}&lt;/tbody&gt;`;
 }
-document.getElementById(&#x27;compareToggle&#x27;).addEventListener(&#x27;click&#x27;,()=&gt;{
+document.getElementById('compareToggle').addEventListener('click',()=&gt;{
   if(compareSet.size===0){
-    const y=document.getElementById(&#x27;solutions&#x27;).getBoundingClientRect().top+window.scrollY-80;
-    window.scrollTo({top:y,behavior:&#x27;smooth&#x27;});
-  } else compareBar.classList.toggle(&#x27;show&#x27;);
+    const y=document.getElementById('solutions').getBoundingClientRect().top+window.scrollY-80;
+    window.scrollTo({top:y,behavior:'smooth'});
+  } else compareBar.classList.toggle('show');
 });
-document.getElementById(&#x27;cmpClose&#x27;).addEventListener(&#x27;click&#x27;,()=&gt;compareBar.classList.remove(&#x27;show&#x27;));
-document.getElementById(&#x27;cmpClear&#x27;).addEventListener(&#x27;click&#x27;,()=&gt;{
-  compareSet.clear();document.querySelectorAll(&#x27;.cmp-cb&#x27;).forEach(cb=&gt;cb.checked=false);refreshCompare();
+document.getElementById('cmpClose').addEventListener('click',()=&gt;compareBar.classList.remove('show'));
+document.getElementById('cmpClear').addEventListener('click',()=&gt;{
+  compareSet.clear();document.querySelectorAll('.cmp-cb').forEach(cb=&gt;cb.checked=false);refreshCompare();
 });
 
 // Contact form
-const cf=document.getElementById(&#x27;contactForm&#x27;);
-if(cf) cf.addEventListener(&#x27;submit&#x27;,async function(e){
+const cf=document.getElementById('contactForm');
+if(cf) cf.addEventListener('submit',async function(e){
   e.preventDefault();
-  const btn=cf.querySelector(&#x27;button[type=submit]&#x27;);
-  btn.disabled=true;btn.textContent=&#x27;Sending...&#x27;;
+  const btn=cf.querySelector('button[type=submit]');
+  btn.disabled=true;btn.textContent='Sending...';
   try{
-    const r=await fetch(cf.action,{method:&#x27;POST&#x27;,body:new FormData(cf),headers:{&#x27;Accept&#x27;:&#x27;application/json&#x27;}});
-    if(r.ok){cf.reset();cf.style.display=&#x27;none&#x27;;document.getElementById(&#x27;formSuccess&#x27;).classList.remove(&#x27;hidden&#x27;);}
-    else{btn.textContent=&#x27;Error — try again&#x27;;btn.disabled=false;}
-  }catch{btn.textContent=&#x27;Error — try again&#x27;;btn.disabled=false;}
+    const r=await fetch(cf.action,{method:'POST',body:new FormData(cf),headers:{'Accept':'application/json'}});
+    if(r.ok){cf.reset();cf.style.display='none';document.getElementById('formSuccess').classList.remove('hidden');}
+    else{btn.textContent='Error — try again';btn.disabled=false;}
+  }catch{btn.textContent='Error — try again';btn.disabled=false;}
 });
 </script>
 <script>
-document.querySelectorAll(&#x27;#mobileMenu a&#x27;).forEach(function(a){a.addEventListener(&#x27;click&#x27;,function(){document.getElementById(&#x27;mobileMenu&#x27;).classList.add(&#x27;hidden&#x27;);});});
+document.querySelectorAll('#mobileMenu a').forEach(function(a){a.addEventListener('click',function(){document.getElementById('mobileMenu').classList.add('hidden');});});
 </script>
 </body>
 </html>
