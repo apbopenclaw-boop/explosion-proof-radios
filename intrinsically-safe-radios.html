@@ -214,6 +214,44 @@
     </div>
   </section>
 
+  <!-- § 5b — Selecting by application -->
+  <section class="mb-12">
+    <h2 class="serif text-[28px] mb-4">Selecting a radio by application</h2>
+    <div class="card">
+      <p class="text-[15px] leading-[1.7] mb-4" style="color:var(--graphite)">
+        The right intrinsically safe radio depends on the operating environment and communication requirements. Below are common deployment scenarios and the features that matter most in each.
+      </p>
+      <p class="text-[15px] leading-[1.7] mb-4" style="color:var(--graphite)">
+        <strong>Upstream oil and gas.</strong> Offshore platforms and onshore wellpads require IIC T4 Gb certification (hydrogen present), IP68 ingress protection, and GPS for lone worker tracking. DMR Tier III trunking is preferred on large platforms where channel congestion is a concern. Battery life of 12+ hours covers a full offshore shift without mid-shift swaps.
+      </p>
+      <p class="text-[15px] leading-[1.7] mb-4" style="color:var(--graphite)">
+        <strong>Downstream refining and petrochemical.</strong> Refineries typically have mixed Zone 1 and Zone 2 areas across large sites. Standardising on Zone 1 radios eliminates the risk of carrying a Zone 2 unit into the wrong area. AES-256 encryption is increasingly required for security compliance. Multi-site operations benefit from DMR repeater networks that allow wide-area coverage without cellular infrastructure.
+      </p>
+      <p class="text-[15px] leading-[1.7] mb-4" style="color:var(--graphite)">
+        <strong>Chemical manufacturing.</strong> Chemical plants often have diverse gas atmospheres — ethylene (IIB), hydrogen (IIC), and ammonia (IIA) may all be present in different process areas. Certifying all radios to IIC eliminates the need to track which radio can enter which area. Noise levels in pump houses and compressor rooms can exceed 95 dB, making speaker-microphone accessories or Bluetooth headset integration essential.
+      </p>
+      <p class="text-[15px] leading-[1.7]" style="color:var(--graphite)">
+        <strong>Mining and tunnelling.</strong> Underground mines require Group I (firedamp) certification, not Group II. Check that the radio carries both Group I and Group II markings if it will be used in both surface and underground facilities. Rugged construction, high drop ratings, and loud audio output are critical in underground environments where ambient noise is high and visibility is limited.
+      </p>
+    </div>
+  </section>
+
+  <!-- § 5c — DMR vs analogue -->
+  <section class="mb-12">
+    <h2 class="serif text-[28px] mb-4">DMR vs analogue protocols</h2>
+    <div class="card">
+      <p class="text-[15px] leading-[1.7] mb-4" style="color:var(--graphite)">
+        Most intrinsically safe radios available today support DMR (Digital Mobile Radio), but analogue models remain in service. The choice between protocols affects procurement, interoperability, and long-term infrastructure costs.
+      </p>
+      <p class="text-[15px] leading-[1.7] mb-4" style="color:var(--graphite)">
+        <strong>DMR</strong> doubles the capacity of each 12.5 kHz channel by using two time slots (TDMA), provides AES-256 encryption, enables GPS location services, and supports text messaging and telemetry. DMR radios are backwards-compatible with analogue systems in most cases, allowing phased migration. The three DMR tiers — Conventional (Tier II), Trunked (Tier III), and Direct Mode — offer flexibility from simple two-radio setups to enterprise-wide trunked networks.
+      </p>
+      <p class="text-[15px] leading-[1.7]" style="color:var(--graphite)">
+        <strong>Analogue</strong> radios are simpler and less expensive, but offer no encryption, no GPS, and single-channel-per-frequency operation. They remain a practical choice for small sites with few users and no security requirements. However, analogue repeater infrastructure is being phased out by most vendors, and replacement parts are becoming harder to source. New deployments should default to DMR unless there is a specific legacy interoperability requirement.
+      </p>
+    </div>
+  </section>
+
   <!-- § 6 -->
   <section class="mb-12">
     <h2 class="serif text-[28px] mb-4">How to verify a certificate</h2>
