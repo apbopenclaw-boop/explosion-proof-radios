@@ -61,9 +61,25 @@
 <header class="glass-nav">
   <div class="max-w-[860px] mx-auto px-6 h-16 flex items-center gap-6">
     <a href="/" class="text-[15px] font-semibold tracking-tight">explosionproofradios<span style="color:var(--ash)">.com</span></a>
-    <nav class="hidden md:flex items-center gap-5 text-[14px] ml-auto" style="color:var(--graphite)">
-      <a href="/" class="hover:text-[color:var(--ink)]">Home</a>
+    <nav class="hidden md:flex items-center gap-6 text-[14px]" style="color:var(--graphite)">
+      <a href="/#solutions" class="hover:text-[color:var(--ink)] transition-colors">Radios</a>
+      <a href="/#certification" class="hover:text-[color:var(--ink)] transition-colors">Certification</a>
+      <a href="/#technology" class="hover:text-[color:var(--ink)] transition-colors">DMR vs TETRA vs PoC</a>
+      <a href="/#contact" class="hover:text-[color:var(--ink)] transition-colors">Contact</a>
     </nav>
+    <div class="ml-auto flex items-center gap-3">
+      <span class="hidden lg:inline mono text-[11.5px]" style="color:var(--ash)">Rev 2026.06 &middot; IEC 60079</span>
+      <select class="lang-select" onchange="if(this.value)window.location=this.value" aria-label="Language">
+        <option value="/" selected>🇬🇧 EN</option>
+        <option value="/de/">🇩🇪 DE</option>
+        <option value="/nl/">🇳🇱 NL</option>
+        <option value="/es/">🇪🇸 ES</option>
+        <option value="/pt-br/">🇧🇷 PT</option>
+      </select>
+      <button onclick="document.getElementById('mobileMenu').classList.remove('hidden')" class="md:hidden p-2 -mr-2" aria-label="Open menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+      </button>
+    </div>
   </div>
 </header>
 
@@ -299,6 +315,8 @@
       <a href="https://hazardousareaguide.com/" class="card !p-4 hover:!border-[color:var(--ink)] text-[14px] font-medium" target="_blank" rel="noopener">Hazardous Area Guide — hub →</a>
       <a href="https://exknowledge.com/pages/ex-markings.html" class="card !p-4 hover:!border-[color:var(--ink)] text-[14px] font-medium" target="_blank" rel="noopener">Ex ratings and markings explained →</a>
       <a href="/motorola-dp4401ex-vs-kenwood-nx330exe.html" class="card !p-4 hover:!border-[color:var(--ink)] text-[14px] font-medium">Motorola DP4401Ex vs Kenwood NX-330EXE →</a>
+      <a href="/motorola-intrinsically-safe-radios.html" class="card !p-4 hover:!border-[color:var(--ink)] text-[14px] font-medium">Motorola Ex-certified radio models →</a>
+      <a href="/intrinsically-safe-two-way-radios.html" class="card !p-4 hover:!border-[color:var(--ink)] text-[14px] font-medium">What is an intrinsically safe two-way radio? →</a>
     </div>
   </section>
 
