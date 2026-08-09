@@ -13,7 +13,6 @@
 <meta property="og:url" content="https://explosionproofradios.com/intrinsically-safe-two-way-radios.html" />
 <meta property="og:site_name" content="explosionproofradios.com" />
 <meta name="twitter:card" content="summary_large_image" />
-<link rel="stylesheet" href="css/style.css" />
 <script src="https://hazardousareaguide.com/consent-banner.js"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4SSH7VDHZJ"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-4SSH7VDHZJ');</script>
@@ -28,14 +27,74 @@
 {"@type":"Question","name":"How long do intrinsically safe radio batteries last?","acceptedAnswer":{"@type":"Answer","text":"Typical battery life for an intrinsically safe two-way radio is 10 to 16 hours on a single charge, depending on the transmit-to-listen ratio and whether GPS is enabled. Ex-certified batteries have lower capacity than standard batteries because the intrinsic safety barrier limits maximum energy storage."}}
 ]}
 </script>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#f5f3f0;--ink:#1a1a1a;--graphite:#6b6b6b;--ash:#999;--accent:#22c55e;--surface:#f0ece7;--border:#e0dcd6;--void:#111110;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--ink);}
+  .serif{font-family:'Instrument Serif',Georgia,serif;}
+  .mono{font-family:'JetBrains Mono',monospace;}
+  .glass{background:rgba(245,243,240,.85);backdrop-filter:blur(12px);border-bottom:1px solid rgba(0,0,0,.06);}
+  .card{background:#fff;border:1px solid rgba(0,0,0,.06);border-radius:16px;padding:2rem;}
+  .badge{display:inline-block;padding:.2rem .55rem;border-radius:6px;font-size:.72rem;font-weight:600;letter-spacing:.03em;text-transform:uppercase;}
+  .badge-green{background:#dcfce7;color:#166534;}
+  .badge-amber{background:#fef3c7;color:#92400e;}
+  .badge-stone{background:var(--surface);color:var(--graphite);}
+  .cmp-table{border-collapse:collapse;font-size:14px;}
+  .cmp-table th{text-align:left;padding:.75rem .5rem;font-weight:600;border-bottom:2px solid var(--border);font-size:13px;color:var(--graphite);}
+  .cmp-table td{padding:.65rem .5rem;border-bottom:1px solid var(--border);vertical-align:top;}
+  .cmp-table tr:last-child td{border-bottom:none;}
+  .hr-rule{height:1px;background:var(--border);}
+  .lang-select{border:1px solid rgba(0,0,0,.1);background:rgba(255,255,255,.6);color:inherit;border-radius:6px;padding:4px 8px;font-size:12px;}
+  .mobile-drawer{background:var(--bg);border-left:1px solid var(--border);}
+  .mobile-nav-link{display:block;padding:.65rem .75rem;border-radius:8px;font-size:15px;color:var(--graphite);}
+  .mobile-nav-link:hover{background:var(--surface);}
+</style>
 <!-- GA4 Hazardous Area Guide Network -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-53EXCZ857W"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-53EXCZ857W');</script>
 </head>
-<body>
+<body class="min-h-screen">
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MFSPF6PH" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-<div id="nav-placeholder"></div>
+<header class="glass sticky top-0 z-30">
+  <div class="max-w-[1140px] mx-auto px-6 h-16 flex items-center gap-6">
+    <a href="/" class="flex items-center gap-2.5 shrink-0">
+      <svg width="26" height="26" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <path d="M16 2.5l11.5 6.5v13L16 28.5 4.5 22V9L16 2.5Z" stroke="#1a1a1a" stroke-width="1.6" stroke-linejoin="round"/>
+        <rect x="10" y="8" width="12" height="16" rx="2" stroke="#1a1a1a" stroke-width="1.6"/>
+        <circle cx="16" cy="12" r="1.4" fill="#22c55e"/>
+        <line x1="16" y1="4" x2="16" y2="8" stroke="#1a1a1a" stroke-width="1.6" stroke-linecap="round"/>
+      </svg>
+      <span class="flex flex-col leading-none">
+        <span class="text-[15px] font-semibold tracking-[-0.015em]">explosionproofradios<span style="color:var(--ash)" class="font-normal">.com</span></span>
+        <span class="mono text-[9.5px] uppercase tracking-[0.16em] mt-1" style="color:var(--ash)">ATEX &middot; IECEx reference</span>
+      </span>
+    </a>
+    <nav class="hidden md:flex items-center gap-6 text-[14px]" style="color:var(--graphite)">
+      <a href="/#solutions" class="hover:text-[color:var(--ink)] transition-colors">Radios</a>
+      <a href="/#certification" class="hover:text-[color:var(--ink)] transition-colors">Certification</a>
+      <a href="/#technology" class="hover:text-[color:var(--ink)] transition-colors">DMR vs TETRA vs PoC</a>
+      <a href="/#contact" class="hover:text-[color:var(--ink)] transition-colors">Contact</a>
+    </nav>
+    <div class="ml-auto flex items-center gap-3">
+      <span class="hidden lg:inline mono text-[11.5px]" style="color:var(--ash)">Rev 2026.06 &middot; IEC 60079</span>
+      <select class="lang-select" onchange="if(this.value)window.location=this.value" aria-label="Language">
+        <option value="/" selected>&#x1f1ec;&#x1f1e7; EN</option>
+        <option value="/de/">&#x1f1e9;&#x1f1ea; DE</option>
+        <option value="/nl/">&#x1f1f3;&#x1f1f1; NL</option>
+        <option value="/es/">&#x1f1ea;&#x1f1f8; ES</option>
+        <option value="/pt-br/">&#x1f1e7;&#x1f1f7; PT</option>
+      </select>
+      <button onclick="document.getElementById('mobileMenu').classList.remove('hidden')" class="md:hidden p-2 -mr-2" aria-label="Open menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
 
 <div id="mobileMenu" class="hidden fixed inset-0 z-40">
   <div class="absolute inset-0 bg-black/30 backdrop-blur-sm" onclick="document.getElementById('mobileMenu').classList.add('hidden')"></div>
@@ -182,8 +241,49 @@
 
 </main>
 
-<div id="footer-placeholder"></div>
-<script src="js/nav.js"></script>
-<script src="js/footer.js"></script>
+<footer class="bg-[color:var(--void)] text-[#e8ebe4]">
+  <div class="max-w-[1140px] mx-auto px-6 pt-20 pb-10">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+      <div class="lg:col-span-5">
+        <div class="flex items-center gap-2.5 mb-5">
+          <svg width="26" height="26" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <path d="M16 2.5l11.5 6.5v13L16 28.5 4.5 22V9L16 2.5Z" stroke="#ffffff" stroke-width="1.6" stroke-linejoin="round"/>
+            <rect x="10" y="8" width="12" height="16" rx="2" stroke="#ffffff" stroke-width="1.6"/>
+            <circle cx="16" cy="12" r="1.4" fill="#22c55e"/>
+            <line x1="16" y1="4" x2="16" y2="8" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+          <span class="font-semibold text-[15px]">explosionproofradios<span class="opacity-60 font-normal">.com</span></span>
+        </div>
+        <p class="serif text-[28px] leading-[1.15] max-w-[22ch]">
+          Engineering reference for hazardous area radio communications.
+        </p>
+        <p class="text-[13.5px] mt-4 opacity-70 leading-[1.6] max-w-[60ch]">
+          This site provides engineering comparison information only. It is not a substitute for a site-specific Ex inspection, DSEAR assessment, or the manufacturer's current Certificate of Conformity. Always verify certification documentation before deployment.
+        </p>
+      </div>
+      <div class="lg:col-span-3">
+        <div class="mono text-[11px] opacity-60 uppercase tracking-wider mb-4">References</div>
+        <ul class="space-y-2.5 text-[14px]">
+          <li><a class="opacity-90 hover:opacity-100" href="https://www.iecex.com" target="_blank" rel="noopener">IECEx Online Certificate System</a></li>
+          <li><a class="opacity-90 hover:opacity-100" href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32014L0034" target="_blank" rel="noopener">ATEX Directive 2014/34/EU</a></li>
+          <li><a class="opacity-90 hover:opacity-100" href="https://webstore.iec.ch/en/publication/622" target="_blank" rel="noopener">IEC 60079 series</a></li>
+          <li><a class="opacity-90 hover:opacity-100" href="https://www.legislation.gov.uk/uksi/2002/2776/contents/made" target="_blank" rel="noopener">DSEAR 2002 (UK)</a></li>
+        </ul>
+      </div>
+      <div class="lg:col-span-4">
+        <div class="mono text-[11px] opacity-60 uppercase tracking-wider mb-4">Also see</div>
+        <ul class="space-y-2.5 text-[14px]">
+          <li><a class="opacity-80 hover:opacity-100" href="https://intrinsicallysafephones.com">intrinsicallysafephones.com</a></li>
+          <li><a class="opacity-80 hover:opacity-100" href="https://hazardousareaguide.com">hazardousareaguide.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="hr-rule !bg-[#1f1f1f] my-10"></div>
+    <div class="flex flex-wrap items-center justify-between gap-4 text-[12px] opacity-60">
+      <div>&copy; 2026 &middot; explosionproofradios.com &middot; Rev 2026.06</div>
+      <div>Engineering reference &mdash; not a safety certificate.</div>
+    </div>
+  </div>
+</footer>
 </body>
 </html>

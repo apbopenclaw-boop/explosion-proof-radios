@@ -13,7 +13,6 @@
 <meta property="og:url" content="https://explosionproofradios.com/intrinsically-safe-radios.html" />
 <meta property="og:site_name" content="explosionproofradios.com" />
 <meta name="twitter:card" content="summary_large_image" />
-<link rel="stylesheet" href="css/style.css" />
 <script src="https://hazardousareaguide.com/consent-banner.js"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4SSH7VDHZJ"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-4SSH7VDHZJ');</script>
@@ -28,14 +27,61 @@
 {"@type":"Question","name":"Do I need to certify radio accessories separately?","acceptedAnswer":{"@type":"Answer","text":"Yes. Every accessory used in a hazardous area — earpieces, speaker-microphones, chargers — must either be included in the radio's Ex certificate as associated apparatus or carry its own certification. Using uncertified accessories with a certified radio invalidates the entire system's Ex protection."}}
 ]}
 </script>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#f5f3f0;--ink:#1a1a1a;--graphite:#6b6b6b;--ash:#999;--accent:#22c55e;--surface:#f0ece7;--border:#e0dcd6;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--ink);}
+  .serif{font-family:'Instrument Serif',Georgia,serif;}
+  .mono{font-family:'JetBrains Mono',monospace;}
+  .glass-nav{position:sticky;top:0;z-index:50;background:rgba(245,243,240,.85);backdrop-filter:blur(12px);border-bottom:1px solid rgba(0,0,0,.06);}
+  .card{background:#fff;border:1px solid rgba(0,0,0,.06);border-radius:16px;padding:2rem;}
+  .badge{display:inline-block;padding:.2rem .55rem;border-radius:6px;font-size:.72rem;font-weight:600;letter-spacing:.03em;text-transform:uppercase;}
+  .badge-green{background:#dcfce7;color:#166534;}
+  .badge-amber{background:#fef3c7;color:#92400e;}
+  .badge-stone{background:var(--surface);color:var(--graphite);}
+  .btn{display:inline-flex;align-items:center;gap:.5rem;padding:.65rem 1.4rem;border-radius:999px;font-size:.875rem;font-weight:500;transition:all .2s;border:none;text-decoration:none;}
+  .btn-sec{background:#fff;color:var(--ink);border:1.5px solid rgba(0,0,0,.1);}
+  .cmp-table{border-collapse:collapse;font-size:14px;}
+  .cmp-table th{text-align:left;padding:.75rem .5rem;font-weight:600;border-bottom:2px solid var(--border);font-size:13px;color:var(--graphite);}
+  .cmp-table td{padding:.65rem .5rem;border-bottom:1px solid var(--border);vertical-align:top;}
+  .cmp-table tr:last-child td{border-bottom:none;}
+  .lang-select{border:1px solid rgba(0,0,0,.1);background:rgba(255,255,255,.6);color:inherit;border-radius:6px;padding:4px 8px;font-size:12px;}
+</style>
 <!-- GA4 Hazardous Area Guide Network -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-53EXCZ857W"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-53EXCZ857W');</script>
 </head>
-<body>
+<body class="min-h-screen">
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MFSPF6PH" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-<div id="nav-placeholder"></div>
+<header class="glass-nav">
+  <div class="max-w-[860px] mx-auto px-6 h-16 flex items-center gap-6">
+    <a href="/" class="text-[15px] font-semibold tracking-tight">explosionproofradios<span style="color:var(--ash)">.com</span></a>
+    <nav class="hidden md:flex items-center gap-6 text-[14px]" style="color:var(--graphite)">
+      <a href="/#solutions" class="hover:text-[color:var(--ink)] transition-colors">Radios</a>
+      <a href="/#certification" class="hover:text-[color:var(--ink)] transition-colors">Certification</a>
+      <a href="/#technology" class="hover:text-[color:var(--ink)] transition-colors">DMR vs TETRA vs PoC</a>
+      <a href="/#contact" class="hover:text-[color:var(--ink)] transition-colors">Contact</a>
+    </nav>
+    <div class="ml-auto flex items-center gap-3">
+      <span class="hidden lg:inline mono text-[11.5px]" style="color:var(--ash)">Rev 2026.06 &middot; IEC 60079</span>
+      <select class="lang-select" onchange="if(this.value)window.location=this.value" aria-label="Language">
+        <option value="/" selected>🇬🇧 EN</option>
+        <option value="/de/">🇩🇪 DE</option>
+        <option value="/nl/">🇳🇱 NL</option>
+        <option value="/es/">🇪🇸 ES</option>
+        <option value="/pt-br/">🇧🇷 PT</option>
+      </select>
+      <button onclick="document.getElementById('mobileMenu').classList.remove('hidden')" class="md:hidden p-2 -mr-2" aria-label="Open menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
 
 <main class="max-w-[860px] mx-auto px-6 py-16">
 
@@ -276,8 +322,10 @@
 
 </main>
 
-<div id="footer-placeholder"></div>
-<script src="js/nav.js"></script>
-<script src="js/footer.js"></script>
+<footer class="border-t" style="border-color:rgba(0,0,0,.06)">
+  <div class="max-w-[860px] mx-auto px-6 py-8 text-[12px]" style="color:var(--ash)">
+    &copy; 2026 explosionproofradios.com &middot; Engineering reference — not a safety certificate.
+  </div>
+</footer>
 </body>
 </html>
