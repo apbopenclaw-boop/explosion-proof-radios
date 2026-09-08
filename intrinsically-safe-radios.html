@@ -83,6 +83,36 @@
   </div>
 </header>
 
+<div id="mobileMenu" class="hidden fixed inset-0 z-40">
+  <div class="absolute inset-0 bg-black/30 backdrop-blur-sm" onclick="document.getElementById('mobileMenu').classList.add('hidden')"></div>
+  <div class="mobile-drawer absolute right-0 top-0 bottom-0 w-[280px] shadow-2xl overflow-y-auto">
+    <div class="p-6 pt-5">
+      <div class="flex items-center justify-between mb-8">
+        <span class="font-semibold text-sm">Menu</span>
+        <button onclick="document.getElementById('mobileMenu').classList.add('hidden')" class="p-1.5 rounded-lg" aria-label="Close">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <nav class="flex flex-col gap-1">
+        <a href="/" class="mobile-nav-link">Home</a>
+        <a href="/#solutions" class="mobile-nav-link">Radios</a>
+        <a href="/#certification" class="mobile-nav-link">Certification</a>
+        <a href="/#technology" class="mobile-nav-link">DMR vs TETRA vs PoC</a>
+        <a href="/#contact" class="mobile-nav-link">Contact</a>
+        <a href="/motorola-dp4401ex-vs-kenwood-nx330exe.html" class="mobile-nav-link">DP4401Ex vs NX-330EXE</a>
+        <div class="my-3 h-px" style="background:var(--border)"></div>
+        <select class="lang-select text-xs rounded px-3 py-2 w-full" onchange="if(this.value)window.location=this.value" aria-label="Language">
+          <option value="/" selected>🇬🇧 EN</option>
+          <option value="/de/">🇩🇪 DE</option>
+          <option value="/nl/">🇳🇱 NL</option>
+          <option value="/es/">🇪🇸 ES</option>
+          <option value="/pt-br/">🇧🇷 PT</option>
+        </select>
+      </nav>
+    </div>
+  </div>
+</div>
+
 <main class="max-w-[860px] mx-auto px-6 py-16">
 
   <p class="mono text-[12px] tracking-[0.04em] mb-4" style="color:var(--graphite)">Buyer's guide · August 2026</p>
@@ -327,5 +357,6 @@
     &copy; 2026 explosionproofradios.com &middot; Engineering reference — not a safety certificate.
   </div>
 </footer>
+<script>document.querySelectorAll('#mobileMenu a').forEach(function(a){a.addEventListener('click',function(){document.getElementById('mobileMenu').classList.add('hidden');});});</script>
 </body>
 </html>
