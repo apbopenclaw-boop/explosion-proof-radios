@@ -2,17 +2,13 @@
   "version": "1.0",
   "name": "explosionproofradios.com",
   "description": "Independent comparison of ATEX and IECEx certified explosion proof two-way radios for hazardous areas",
-  "url": "https://explosionproofradios.com",
+  "url": "https://explosionproofradios.com/",
   "ai_content": {
     "llms_txt": "https://explosionproofradios.com/llms.txt",
     "robots_txt": "https://explosionproofradios.com/robots.txt",
     "sitemap": "https://explosionproofradios.com/sitemap.xml"
   },
-  "content_negotiation": {
-    "markdown": true,
-    "accept_header": "text/markdown"
-  },
-  "contact": "info@hazardousareaguide.com",
+  "contact": "https://explosionproofradios.com/#contact",
   "policy": {
     "allowed_usage": [
       "training",
