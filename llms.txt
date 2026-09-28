@@ -3,7 +3,7 @@
 > Compare every ATEX and IECEx certified explosion proof two-way radio for Zone 1 and Zone 2 hazardous areas.
 
 ## What This Site Covers
-- ATEX and IECEx certified two-way radios (DMR, TETRA, PoC)
+- ATEX and IECEx certified two-way radios (DMR, TETRA, NXDN, PoC)
 - Zone 1 and Zone 2 portable radio comparison
 - Specifications verified against manufacturer certificates of conformity
 - Safety features: Man Down, Lone Worker, GPS, encryption
@@ -21,3 +21,6 @@
 - Home: https://explosionproofradios.com/
 - Sitemap: https://explosionproofradios.com/sitemap.xml
 - Full LLM content: https://explosionproofradios.com/llms-full.txt
+- Guides: https://explosionproofradios.com/intrinsically-safe-radios.html, https://explosionproofradios.com/intrinsically-safe-two-way-radios.html, https://explosionproofradios.com/motorola-intrinsically-safe-radios.html, https://explosionproofradios.com/motorola-dp4401ex-vs-kenwood-nx330exe.html
+- Contact (price and availability requests too): https://explosionproofradios.com/#contact
+- Privacy: https://explosionproofradios.com/privacy.html
