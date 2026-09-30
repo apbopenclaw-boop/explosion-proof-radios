@@ -160,7 +160,7 @@ def footer(lang):
     return f'''<footer class="site-footer">
   <div class="max-w-[1140px] mx-auto px-4 md:px-6 py-8 flex flex-wrap items-center justify-between gap-x-6 gap-y-2">
     <span>© 2026 explosionproofradios.com · {t["foot"]}</span>
-    <span class="flex flex-wrap gap-x-5"><a href="{PAGES["privacy"][lang]}">{t["privacy"]}</a><a href="{t["contact"]}">{t["contact_l"]}</a><a href="https://hazardousareaguide.com">{t["network"]}</a></span>
+    <span class="flex flex-wrap gap-x-5"><a href="{PAGES["privacy"][lang]}">{t["privacy"]}</a><a href="{t["contact"]}">{t["contact_l"]}</a></span>
   </div>
 </footer>'''
 
