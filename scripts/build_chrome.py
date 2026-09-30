@@ -180,11 +180,21 @@ def strip_shared_rules(css):
 
 BANNER = '<script src="https://hazardousareaguide.com/consent-banner.js"></script>'
 
+import hashlib
+def _ver(*names):
+    """Content hash for cache busting: Cloudflare caches /assets/* for a year."""
+    h = hashlib.md5()
+    for name in names:
+        h.update(pathlib.Path(name).read_bytes())
+    return h.hexdigest()[:8]
+CSS_V = _ver('assets/site.css', 'assets/tw.css')
+JS_V = _ver('assets/site.js')
+
 HEAD_ASSETS = ('<link rel="icon" href="/favicon.svg" type="image/svg+xml">\n'
                '<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">\n'
                '<link rel="apple-touch-icon" href="/apple-touch-icon.png">\n'
-               '<link rel="stylesheet" href="/assets/site.css">\n'   # components first ...
-               '<link rel="stylesheet" href="/assets/tw.css">\n')    # ... so utilities (md:hidden etc.) win
+               f'<link rel="stylesheet" href="/assets/site.css?v={CSS_V}">\n'   # components first ...
+               f'<link rel="stylesheet" href="/assets/tw.css?v={CSS_V}">\n')    # ... so utilities (md:hidden etc.) win
 
 def process(p):
     rel = p.as_posix()
@@ -197,7 +207,7 @@ def process(p):
     head = re.sub(r'\s*<script src="https://cdn\.tailwindcss\.com"></script>', '', head)
     head = re.sub(r'\s*<script>\s*tailwind\.config\s*=.*?</script>', '', head, flags=re.S)
     head = re.sub(r'[ \t]*<link rel="(?:icon|apple-touch-icon)"[^>]*>\n?', '', head)
-    head = re.sub(r'[ \t]*<link rel="stylesheet" href="/assets/(?:tw|site)\.css">\n?', '', head)
+    head = re.sub(r'[ \t]*<link rel="stylesheet" href="/assets/(?:tw|site)\.css(?:\?v=\w+)?">\n?', '', head)
     head = re.sub(r'(<style[^>]*>)(.*?)(</style>)', lambda m: m.group(1) + strip_shared_rules(m.group(2)) + m.group(3), head, flags=re.S)
     head = re.sub(r'[ \t]*(\.burger\{[^}]*\}|@media\(max-width:767px\)\{\.burger\{display:block\}[^\n]*)\n', '', head)   # old burger menu
     head = re.sub(r'[ \t]*<style[^>]*>\s*</style>\s*', '', head)
@@ -235,8 +245,9 @@ def process(p):
     body = re.sub(r"document\.addEventListener\('click',function\(e\)\{var d=document\.getElementById\('guidesDD'\);if\(d&&!d\.contains\(e\.target\)\)d\.classList\.remove\('dd-open'\);\}\);\s*", '', body)
     body = re.sub(r"document\.querySelectorAll\('#mobileMenu a'\)\.forEach\(function\(a\)\{a\.addEventListener\('click',function\(\)\{document\.getElementById\('mobileMenu'\)\.classList\.add\('hidden'\);\}\);\}\);\s*", '', body)
     body = re.sub(r'<script>\s*</script>\s*', '', body)
+    body = re.sub(r'<script src="/assets/site\.js(?:\?v=\w+)?" defer></script>', f'<script src="/assets/site.js?v={JS_V}" defer></script>', body)
     if '/assets/site.js' not in body:
-        body = body.replace('</body>', '<script src="/assets/site.js" defer></script>\n</body>', 1)
+        body = body.replace('</body>', f'<script src="/assets/site.js?v={JS_V}" defer></script>\n</body>', 1)
     s = head + '</head>' + body
     if s != o:
         p.write_text(s, encoding='utf-8')
