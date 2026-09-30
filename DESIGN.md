@@ -43,7 +43,7 @@ Warm paper and ink. Green is a signal, never a fill for text or buttons.
 
 - **Guides dropdown:** a real button with `aria-expanded`. It closes on Escape, on outside click and when focus leaves it.
 - **Mobile menu:** a dialog. Opening it moves focus to Close, Tab stays inside, Escape closes it, the page doesn't scroll behind it, and focus returns to the menu button.
-- **Forms:** add `data-isp-form` to the form and a `<p data-form-status hidden>` after it. The script validates inline, posts to formsubmit.co as JSON, and shows the result in place. The inbox address is stored encoded in `site.js` and never appears in the HTML. `?inquire=` pre-fills the message. The honeypot field is named `_honey` with class `hp-input`.
+- **Forms:** add `data-isp-form` to the form and a `<p data-form-status hidden>` after it. The script validates inline, posts to Web3Forms (api.web3forms.com, public access key) as JSON, and shows the result in place. The inbox address is stored encoded in `site.js` and never appears in the HTML. `?inquire=` pre-fills the message. The honeypot field is named `_honey` with class `hp-input`.
 - **Multilingual home script:** the home pages share one script. Labels, translated values and deployment notes come from the `L` object near its top, which `radios-steps/s02_home_i18n.py` generated per language.
 - **Compare panel (home):** up to three picks, with a message on the fourth. The panel is height-capped with its own scroll. Escape or Close hides it, and a floating button reopens it.
 - **Motion:** everything respects `prefers-reduced-motion`.

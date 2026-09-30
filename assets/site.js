@@ -2,7 +2,7 @@
    - Guides dropdown: click/keyboard, aria-expanded, Escape, outside click.
    - Mobile menu: real dialog (focus in, focus trap, Escape, scroll lock, focus back).
    - Forms marked data-isp-form: inline errors, "Sending…", success/failure,
-     delivered via formsubmit.co AJAX. The inbox address is never in the HTML. */
+     delivered via Web3Forms (JSON API). The inbox address is never in the page. */
 (function () {
   var LANG = (document.documentElement.lang || 'en').slice(0, 2);
   var T = {
@@ -60,8 +60,11 @@
   }
 
   /* ---------- Forms ---------- */
-  var INBOX = 'bW9jLmxpYW1nQHdhbGNuZXBvYnBh';   // stored reversed + base64; assembled only when sending
-  function endpoint() { return 'https://formsubmit.co/ajax/' + atob(INBOX).split('').reverse().join(''); }
+  // Web3Forms (replaced FormSubmit 2026-09-30 after its outage). The access key is public by design and maps
+  // to the owner's inbox, so no address is in the page.
+  var W3F_KEY = '930572e9-b94e-4d18-9c2b-25999a09ef0f';
+  var ENDPOINT = 'https://api.web3forms.com/submit';
+  var TIMEOUT_MS = 15000;
   function errorFor(f) {
     if (f.type === 'hidden' || f.disabled || f.classList.contains('hp-input')) return '';
     var v = (f.value || '').trim();
@@ -91,18 +94,20 @@
       [].forEach.call(form.elements, function (f) { if (!f.name) return; var m = errorFor(f); showError(f, m); if (m && !bad) bad = f; });
       if (bad) { bad.focus(); return; }
       var hp = form.querySelector('.hp-input'); if (hp && hp.value) return;   // spam trap
-      var data = { _subject: form.getAttribute('data-subject') || 'explosionproofradios.com enquiry', _template: 'table', _captcha: 'false', page: location.href };
+      var data = { access_key: W3F_KEY, subject: form.getAttribute('data-subject') || 'explosionproofradios.com enquiry', from_name: 'explosionproofradios.com', page: location.href };
       [].forEach.call(form.elements, function (f) { if (f.name && f.type !== 'submit' && !f.classList.contains('hp-input')) data[f.name] = f.value; });
-      if (data.email) data._replyto = data.email;
       if (btn) { btn.disabled = true; btn.setAttribute('aria-busy', 'true'); btn.textContent = t.sending; }
-      fetch(endpoint(), { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }, body: JSON.stringify(data) })
-        .then(function (r) { return r.json(); })
+      var ctrl = window.AbortController ? new AbortController() : null;
+      var timer = ctrl ? setTimeout(function () { ctrl.abort(); }, TIMEOUT_MS) : null;   // never hang on 'Sending…'
+      fetch(ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }, body: JSON.stringify(data), signal: ctrl ? ctrl.signal : undefined })
+        .then(function (r) { clearTimeout(timer); return r.json(); })
         .then(function (j) {
-          if (!j || String(j.success) !== 'true') throw new Error('send failed');
+          if (!j || String(j.success) !== 'true') throw new Error((j && (j.message || (j.body && j.body.message))) || 'send failed');
           form.hidden = true;
           if (status) { status.className = 'form-status form-status--ok'; status.setAttribute('role', 'status'); status.textContent = form.getAttribute('data-success') || t.ok; status.hidden = false; status.setAttribute('tabindex', '-1'); status.focus(); }
         })
-        .catch(function () {
+        .catch(function (err) {
+          clearTimeout(timer); if (window.console) console.warn('Form not sent:', err && err.message);
           if (status) { status.className = 'form-status form-status--error'; status.setAttribute('role', 'alert'); status.textContent = t.fail; status.hidden = false; }
         })
         .then(function () { if (btn) { btn.disabled = false; btn.removeAttribute('aria-busy'); btn.innerHTML = label; } });
